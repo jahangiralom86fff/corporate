@@ -7,8 +7,6 @@ function myFunction() {
   }
 }
 
-
-
 let btn = document.getElementById('dropdown-navbar');
 let content = document.querySelector('.dropdown-content');
 

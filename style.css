@@ -16,23 +16,223 @@ a{
     height:50px;
     background-color: #353535;
     position: relative;
+    overflow: hidden;
 }
 .topbar::after{
     position: absolute;
-    content: url("assets/images/home-page/bg-tobbar.png");
-    width: 30%;
-    height: 100%;                  
+    content: '';
+    width: 33%;
+    height: 100%;
+    background-color:#d8591b;                 
     left:0px;
     top:0px;
     z-index: 1;
+}
+.topbar::before{
+    position: absolute;
+    content: '';
+    width: 108px;
+    height: 100%;
+    background-color:#d8591b;                 
+    left:30%;
+    top:0px;
+    z-index: 1;
+    transform: rotate(-49deg);
 }
 .topbar p{
     position: relative;
     z-index: 4;
     color:#ffffff;
     display: flex;
-    padding-left:39%;
+    padding-left:21%;
     padding-top: 12px;
     font-size: 15px;
     font-family: "Roboto",sans-serif;    
 }
+.topbar .support-tobbar ul {
+    padding-left: 26%;
+}
+.topbar .support-tobbar ul li{
+    float: left;
+    list-style-type: none;
+    margin:0px 2px;
+}
+.topbar .support-tobbar ul li a{
+    color:#939393;
+    font-size: 15px;
+    font-family:"Roboto",sans-serif;
+    text-transform: capitalize;
+}
+.topbar .icon-tobar ul{
+    padding-left:60%;
+}
+.topbar .icon-tobar ul li{
+    list-style: none;
+    float: left;
+    margin:0px 5px;
+}
+.topbar .icon-tobar ul li a{
+    color:#ffffff;
+    font-size: 14px;
+    text-transform: capitalize;
+
+}
+
+
+/*banner section start now*/
+.banner{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.banner .carousel-item{
+    position: relative;
+}
+.banner .carousel-item::before{
+    content: '';
+    left:0;
+    top:0;
+    position: absolute;
+    background: linear-gradient(90deg,rgba(53, 53, 53, 0.6) 50%, rgba(117, 116, 116, .1) 100%);
+    width:100%;
+    height: 100%;
+}
+.carousel-control-prev{
+    position: absolute;
+    left:1182px;
+    top:357px;
+    width:50px;
+    height: 50px;
+    background-color: #b06948;
+    border-radius: 50%;
+    font-size:12px!important;
+}
+.carousel-control-next{
+    position: absolute;
+    right:306px;
+    top:297px;
+    width:50px;
+    height: 50px;
+    background-color: #b06948;
+    border-radius: 50%;
+    font-size:12px!important;
+}
+.banner .carousel-inner .carousel-item .slider{
+    position: relative;
+}
+.banner .carousel-inner .carousel-item .slider .slider-content{
+    position: absolute;
+    top:-457px;
+    left:58px;
+
+}
+.banner .slider-content .title p{
+    font-size: 20px;
+    color:#c6531c;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-left: 0px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.banner .slider-content .title h1{
+    font-size: 62px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: left;
+    color:#ffffff;
+    width: 70%;
+}
+.banner .slider-content .single-title p{
+    text-align: left;
+    color:#ffffff;
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    width:70%;
+}
+.banner .slider-content .slider-btn-area ul{
+    text-align: left;
+    padding: 0px;
+    margin-left: -14px;
+    margin-top: 30px;
+}
+.banner .slider-content .slider-btn-area ul li{
+    list-style-type: none;
+    float: left;
+    margin:0px 15px;
+}
+.banner .slider-content .slider-btn-area ul li .text{
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    padding-top:21px;
+    
+}
+.banner .slider-content .slider-btn-area ul li .btns{
+    width:165px;
+    height:65px;
+    background-color:#ff6116;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color:#ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.banner .slider-content .slider-btn-area ul li .play-btn{
+    width:65px;
+    height: 65px;
+    background-color: #ff6116;
+    display: inline-block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner .slider-content .slider-btn-area ul li .play-btn::before{
+    position: absolute;
+    content: '';
+    width: 110%;
+    height: 110%;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    top:-2px;
+    left: -3px;
+}
+.banner .slider-content .slider-btn-area ul li .play-btn::after{
+    position: absolute;
+    content: "\f04b";
+    font-weight:1000;
+    font-size: 18px;
+    font-family: "Font Awesome 5 Free";
+    color:#ffffff;
+}
+.banner .carousel-inner .shape{
+    position: relative;
+}
+.banner .carousel-inner .shape .shapes img{
+    position: absolute;
+    left: -262px;
+    top:-792px;
+    transform: rotate(-4deg);
+}
+.banner .carousel-inner .shape .slider-shape{
+    position: relative;
+}
+.banner .carousel-inner .shape .slider-shape .side-shape{
+    position: absolute;
+    top:-276px;
+    transform: rotate(29deg);
+    object-fit: cover;
+    transition: all ease-in-out 5s;
+}
+
+/*banner section end now*/
+
+
