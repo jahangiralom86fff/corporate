@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--bootstrap link-->
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <!--fancybox link-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
         <!--owl corusel css-->
         <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
         <!--css file-->
@@ -74,6 +76,10 @@
             
         <!--brand section start now-->
         <section class="banner">
+            <div class="shape">
+                <img src="assets/images/home-page/banner-shape-one.png" alt="shape-one">
+                <img src="assets/images/home-page/banner-shape-two.png"  class="slider-shape" alt="shape-one">
+            </div>
            <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -84,14 +90,6 @@
                     <div class="carousel-item active">
                         <img src="assets/images/home-page/banner-two.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <div class="shape">
-                                <div class="shapes">
-                                    <img src="assets/images/home-page/banner-shape-one.png" alt="shape-one">
-                                </div>
-                                <div class="slider-shape">
-                                    <img src="assets/images/home-page/banner-shape-two.png"  class="side-shape" alt="shape-one">
-                                </div>
-                            </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -107,7 +105,7 @@
                                                 <div class="slider-btn-area">
                                                     <ul>
                                                         <li><a href="#" class="btns">Discover More</a></li>
-                                                        <li><a href="#" class="play-btn"></a></li>
+                                                        <li><a class="play-btn" data-fancybox href="https://youtu.be/TG3Ux2elYg8?si=X2ItMTEiWgQqojiZ"></a></li>
                                                         <li><a href="#" class="text">How We Work</a></li>
                                                     </ul>  
                                                 </div>
@@ -121,14 +119,6 @@
                     <div class="carousel-item">
                         <img src="assets/images/home-page/banner-two.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <div class="shape">
-                                <div class="shapes">
-                                    <img src="assets/images/home-page/banner-shape-one.png" alt="shape-one">
-                                </div>
-                                <div class="slider-shape">
-                                    <img src="assets/images/home-page/banner-shape-two.png"  class="side-shape" alt="shape-one">
-                                </div>
-                            </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -144,7 +134,7 @@
                                                 <div class="slider-btn-area">
                                                     <ul>
                                                         <li><a href="#" class="btns">Discover More</a></li>
-                                                        <li><a href="#" class="play-btn"></a></li>
+                                                        <li><a class="play-btn" data-fancybox href="https://www.youtube.com/watch?v=_i5IwYsChr4&t=29s"></a></li>
                                                         <li><a href="#" class="text">How We Work</a></li>
                                                     </ul>  
                                                 </div>
@@ -158,14 +148,6 @@
                     <div class="carousel-item">
                         <img src="assets/images/home-page/banner-two.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <div class="shape">
-                                <div class="shapes">
-                                    <img src="assets/images/home-page/banner-shape-one.png" alt="shape-one">
-                                </div>
-                                <div class="slider-shape">
-                                    <img src="assets/images/home-page/banner-shape-two.png"  class="side-shape" alt="shape-one">
-                                </div>
-                            </div>
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -181,7 +163,7 @@
                                                 <div class="slider-btn-area">
                                                     <ul>
                                                         <li><a href="#" class="btns">Discover More</a></li>
-                                                        <li><a href="#" class="play-btn"></a></li>
+                                                        <li><a class="play-btn" data-fancybox href="https://www.youtube.com/watch?v=_i5IwYsChr4&t=29s"></a></li>
                                                         <li><a href="#" class="text">How We Work</a></li>
                                                     </ul>  
                                                 </div>
@@ -203,13 +185,68 @@
                 </button>
             </div>
         </section>
-        <!--brand section end now-->
+
+        <!--feature section start-->
+        <section class="feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <div class="overlay"></div>
+                            <img src="assets/images/home-page/feature-shape.png" alt="feature-shape">
+                            <div class="feature-list">
+                                <div class="feature-icon">
+                                    <a href="#"><i class="fa-solid fa-computer"></i></a>
+                                </div>
+                                <div class="feature-text">
+                                    <a href="#">Business Growth Plannings</a>
+                                </div>
+                                <p class="desc">Globally evisculate one-to web services the dynamic markets magnetic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <div class="overlay"></div>
+                            <img src="assets/images/home-page/feature-shape.png" alt="feature-shape">
+                            <div class="feature-list">
+                                <div class="feature-icon">
+                                    <a href="#"><i class="fa-solid fa-computer"></i></a>
+                                </div>
+                                <div class="feature-text">
+                                    <a href="#">Business Growth Plannings</a>
+                                </div>
+                                <p class="desc">Globally evisculate one-to web services the dynamic markets magnetic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <div class="overlay"></div>
+                            <img src="assets/images/home-page/feature-shape.png" alt="feature-shape">
+                            <div class="feature-list">
+                                <div class="feature-icon">
+                                    <a href="#"><i class="fa-solid fa-computer"></i></a>
+                                </div>
+                                <div class="feature-text">
+                                    <a href="#">Business Growth Plannings</a>
+                                </div>
+                                <p class="desc">Globally evisculate one-to web services the dynamic markets magnetic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--feature section end now-->
 
         <!--query js-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
         <!--owl crousel-->
         <script src="assets/js/banner.js"></script>
+        <!--fancybox start Now-->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
         <!--bootstrp js-->
         <script src="assets/js/bootstrap.min.js"></script>
         <!--navbar js-->
