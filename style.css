@@ -249,6 +249,7 @@ a{
     border-radius: 8px;
     position: relative;
     transition: all 500ms ease-out;
+    margin-bottom: 20px;
     overflow: hidden;
 }
 .feature .feature-item:hover{
@@ -327,5 +328,473 @@ a{
     color:#ffd0ba;
 }
 /*feature section End*/
+
+/*about section start now*/
+.about{
+    padding: 100px 0px;
+    width:100%;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+.about .shape img{
+    position: absolute;
+    top:-375px;
+    left:-71px;
+}
+.about .title p{
+    color:#db5e22;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+.about .title p::before{
+    position: absolute;
+    top:30px;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #c6531c;
+    animation: animate 1.5s ease-in infinite;
+}
+@keyframes animate{
+    from{
+        width:0px;
+        height:2px;
+    }
+    to{
+        width:55px;
+        height: 2px;
+        background-color: red;
+    } 
+}
+.about .title p::after{
+    position: absolute;
+    top:30px;
+    left:50px;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #c6531c;
+    animation: animate 1.5s ease-in infinite;
+}
+@keyframes animate{
+    from{
+        width:0px;
+        height:2px;
+    }
+    to{
+        width:60px;
+        height: 2px;
+        background-color: red;
+    } 
+}
+.about h2{
+    font-size: 46px;
+    color: #353535;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top:27px;
+}
+.about .desc{
+    margin-top:17px;
+}
+.about .desc p{
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    text-transform: capitalize;
+    color:#6f6f6f;
+}
+.about .desc .single-text{
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    text-transform: capitalize;
+    color:#6f6f6f;
+}
+.about .terget ul{
+    padding-left: 26px;
+}
+.about .terget ul li{
+    list-style-type: none;
+    position: relative;
+    margin:15px 0px;
+}
+.about .terget ul li::before{
+    content:url("assets/images/home-page/about-sign.png");
+    position: absolute;
+    left:-26px;
+}
+.about .terget ul li a{
+    font-size: 18px;
+    color:#353535;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.about .about-btn{
+    width:150px;
+    height: 60px;
+    background-color: #ff6116;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color:#ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top:20px;
+    transition: width 400ms ease-in;
+    position: relative;
+    overflow: hidden;
+}
+.about .about-btn::before{
+    content:"\f101";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 600;
+    left:116px;
+    position: absolute;
+    transition: all 500ms ease-out;
+}
+.about .about-btn:hover::before{
+    left:126px;
+}
+.about .about-btn::after{
+    position: absolute;
+    content: '';
+    width:100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    left:-165px;
+    top:0px;
+    transition: all 500ms ease-out;
+}
+.about .about-btn:hover::after{
+    left:0px;
+}
+.about .about-btn:hover{
+    width:165px;
+}
+.about .img-box{
+    position: relative;
+    z-index: 15;
+}
+.about .img-box .text{
+    display: inline-block;
+    position: relative;
+}
+.about .img-box .text{
+    position: absolute;
+    top: 0px;
+    left: 420px;
+    content: '';
+    width: 55%;
+    height: 4px;
+    background-color: #ff6116;
+    transition: all 500ms ease-in;
+    right: 68px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    top: -52px;
+}
+.about .img-box .text::after{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color:#ff6116;
+    top:0px;
+    left:0px;
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+}
+.about .img-box:hover .text::after{
+    left:40px;
+}
+.about .about-play{
+    position: relative;
+}
+.about .about-play .img-box{
+    position: absolute;
+    left:45%;
+    top:-96px;
+}
+.about .about-play .img-box::after{
+    content: '';
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(96, 76, 86, 0.70);
+    top:0px;
+    left:0px;
+}
+.about .about-play .img-box .play-btn{
+    position: absolute;
+    height: 50px;
+    width:50px;
+    top:103px;
+    z-index: 45;
+    left:108px;
+    display: flex;
+    justify-content: center;
+    background-color:#c6531c;
+    border-radius: 50%;
+    align-items: center;
+    font-size: 16px;
+    color:#ffffff;
+    text-transform: capitalize;
+    border: 2px solid rgba(252, 252, 252, 0.7);
+}
+/*about progress bar*/
+.about .about-progress{
+    width: 267px;
+    height: 190px;
+    padding-top:30px;
+    background-color: #ffeaea;
+    margin-left: -73px;
+    margin-top: -44px;
+    z-index: 20;
+    border-radius: 8px;
+    position: relative;
+}
+.about .progress-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #353535;
+    margin: 0 0 10px;
+}
+.about #progress-titlest{
+    font-size: 18px;
+    font-weight: bold;
+    color: #353535;
+    margin-top:25px;
+    margin-bottom:24px;
+}
+.about .progress-title .single-text{
+    position: absolute;
+    left:72%;
+    top:25px;
+    color:#fffefe;
+    background-color:#da5e21;
+    border:4px solid rgba(255, 250, 252, 0.9);
+    width:50px;
+    height: 50px;
+    display: flex;
+    padding-top:13px;
+    padding-left:8px;
+    border-radius: 50%;
+    opacity: 2;
+    font-size: 16px;
+}
+.about .progress-title .single-text::after{
+    position: absolute;
+    content: "%";
+    top:13px;
+    left:25px;
+}
+.about .progress-title .single-two{
+    position: absolute;
+    left:72%;
+    top:105px;
+    color:#fffefe;
+    background-color:#da5e21;
+    border:4px solid rgba(255, 250, 252, 0.9);
+    width:50px;
+    height: 50px;
+    display: flex;
+    padding-top:13px;
+    padding-left:8px;
+    border-radius: 50%;
+    opacity: 2;
+    font-size: 16px;
+}
+.about .progress-title .single-two::after{
+    position: absolute;
+    content: "%";
+    top:13px;
+    left:25px;
+}
+.about .progress{
+    height: 10px;
+    background: #d4d7e6;
+    border-radius: 30px;
+    box-shadow: none;
+    margin-bottom:14px;
+    overflow: visible;
+}
+.about #progress{
+    margin-top:31px;
+}
+.about #progress-item{
+    margin-left:62px;
+}
+.about .progress .progress-bar{
+    width:70%;
+    background-color:#ff6116;
+    border-radius: 30px;
+    box-shadow: none;
+    position: relative;
+    animation: animate-positive 2s;
+}
+@keyframes animate-positive{
+    0%{ 
+        width: 0;
+    }
+}
+/*about section End Now*/
+
+/*service section start now*/
+.service{
+    width:100%;
+    padding:100px 0px;
+    background-color:#fff9f6;
+    overflow: hidden;
+    position: relative;
+}
+.service .shape-img img{
+    position: absolute;
+    top: -1066px;
+    left: -171px;
+    transform: rotate(-1deg);
+}
+.service .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service .title p{
+    color: #db5e22;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    transition: all 500ms ease-in-out;
+
+}
+.service .title p::after{
+    position: absolute;
+    top: 30px;
+    left: 42px;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #c6531c;
+    animation: animate 1.5s ease-in infinite;
+}
+.service .title p::before{
+    position: absolute;
+    top: 30px;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #c6531c;
+    animation: animate 1.5s ease-in infinite;
+}
+.service h3{
+    text-align: center;
+    margin-bottom:60px;
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#353535;
+}
+.service .card-box{
+    width:89%;
+    background-color: #ffffff;
+    position: relative;
+    z-index:7;
+    box-shadow: 0px 0px 10px rgba(17, 15, 15, 0.09);
+    transition: all 500ms ease-out;
+}
+.service .card-box:hover{
+    box-shadow: 0px 0px 17px rgba(17, 15, 15, 0.09);
+    transform: translateY(-15px);
+}
+.service .card-box .content{
+    width: 89%;
+    height: auto;
+    padding-top:40px;
+    padding-left:40px;
+    padding-bottom:30px;
+
+}
+.service .card-box .content .title-text{
+    color:#353535;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.service .card-box .content .single-title h5{
+    font-size: 16px;
+    color:#616161;
+    padding-top:8px;
+    font-family:"Roboto",sans-serif;
+}
+.service .card-box .content .read-more-btn{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#353535;
+    padding-top:15px;
+    display: inline-block;
+    position: relative;
+    transition: all 400ms ease-in;
+}
+.service .card-box .content .read-more-btn:hover{
+    color:#ff6116;
+    transform: translateX(14px);
+}
+.service .card-box .content .read-more-btn .angels-btn{
+    position: absolute;
+    top:17px;
+    left:72px;
+    transition: all 500ms ease-in;
+}
+.service .card-box .content .read-more-btn:hover .angels-btn{
+    color:#ff6116;
+  
+}
+.service .card-box .content .logo-img{
+    position: absolute;
+    background-color:#ff6116;
+    width:50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    top:174px;
+}
+/*service section End*/
+
+/*it it-solutions start*/
+.brand{
+    padding:100px 0px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+.brand .it-shape{
+    position: relative;
+}
+.brand .it-shape img{
+    position: absolute;
+    top:-268px;
+}
+.brand .it-shape-to{
+    position: relative;
+}
+.brand .it-shape-to img{
+    position: absolute;
+    top:-268px;
+    left:71%;
+}
+.brand .item .img-box img{
+    width:160px;
+    height:37px;
+}
+/*it it-solutions End*/
+
 
 
