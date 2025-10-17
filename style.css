@@ -700,12 +700,28 @@ a{
     color:#353535;
 }
 .service .card-box{
-    width:89%;
+    width:100%;
+    overflow: hidden;
     background-color: #ffffff;
     position: relative;
     z-index:7;
     box-shadow: 0px 0px 10px rgba(17, 15, 15, 0.09);
+    border-radius:7px 0px 7px 7px;
     transition: all 500ms ease-out;
+}
+.service .card-box .imgbox{
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+.service .card-box .imgbox a img{
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.8s ease;
+    transform: scale(1);
+}
+.service .card-box:hover .imgbox a img{
+    border-radius: 4px 4px 0 0;
+    transform: scale(1.1);
 }
 .service .card-box:hover{
     box-shadow: 0px 0px 17px rgba(17, 15, 15, 0.09);
@@ -717,13 +733,16 @@ a{
     padding-top:40px;
     padding-left:40px;
     padding-bottom:30px;
-
 }
 .service .card-box .content .title-text{
     color:#353535;
     font-size: 24px;
     font-weight: bold;
     text-transform: capitalize;
+    transition: all 500ms ease;
+}
+.service .card-box .content .title-text:hover{
+    color:#ff6116;
 }
 .service .card-box .content .single-title h5{
     font-size: 16px;
@@ -753,7 +772,6 @@ a{
 }
 .service .card-box .content .read-more-btn:hover .angels-btn{
     color:#ff6116;
-  
 }
 .service .card-box .content .logo-img{
     position: absolute;
@@ -764,37 +782,243 @@ a{
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    top:174px;
+    top:43%;
+    left:10%;
+    transition: all 500ms ease;
+}
+.service .card-box:hover .content .logo-img{
+    transform: rotateY(360deg);  
 }
 /*service section End*/
 
-/*it it-solutions start*/
+/*brnad start*/
 .brand{
     padding:100px 0px;
     background-color: #ffffff;
     position: relative;
     overflow: hidden;
 }
-.brand .it-shape{
+.brand .left-shape{
     position: relative;
 }
-.brand .it-shape img{
+.brand .left-shape img{
     position: absolute;
-    top:-268px;
+    top:-52px;
+    left:52px;
+    animation: aniimg 2000ms linear infinite;
 }
-.brand .it-shape-to{
+@keyframes  aniimg  {
+    form{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+.brand .right-shape{
     position: relative;
 }
-.brand .it-shape-to img{
+.brand .right-shape img{
     position: absolute;
-    top:-268px;
-    left:71%;
+    top:-48px;
+    left:88%;
+    animation: brand-right-shape 2000ms linear infinite;
+}
+@keyframes brand-right-shape {
+    form{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
 }
 .brand .item .img-box img{
     width:160px;
     height:37px;
 }
-/*it it-solutions End*/
+/*brand End*/
+
+/*media section Start now*/
+.media{
+    width:100%;
+    padding:90px 0px;
+    position: relative;
+    background:url("assets/images/home-page/media-bg.png");
+    background-position: center;
+    background-repeat:no-repeat;
+    overflow: hidden;
+}
+.media .overlay{
+    width:100%;
+    height: 97%;
+    position: absolute;
+    background-color:rgba(5, 2, 4, 0.50);
+    top:8px;
+    left:0px;
+    bottom:12px;
+}
+.media .video-btn{
+    position: relative;
+    z-index: 45;
+    display: flex;
+    justify-content: center;
+}
+.media .video-btn .plays-btn{
+    width:130px;
+    height: 130px;
+    background-color:rgba(63, 62, 63, 0.70);
+    box-shadow: 0px 0px 15px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    animation: plays-btn 2s ease infinite;
+}
+@keyframes  plays-btn{
+    0%{
+        border: 0px solid red;
+    }
+    50%{
+        background: radial-gradient(circle at 30% 30%, #ff0057, #2a2a72);
+        border:6px solid rgba(247, 243, 245, 0.1);
+        box-shadow:0px 0px 15px rgba(17, 15, 15, 0.09);
+    }
+    100%{
+        border:8px solid rgba(250, 250, 250, 0.2);
+        box-shadow:0px 0px 15px rgba(250, 250, 250, 0.09);
+    }
+}
+.media .video-btn .plays-btn::after{
+    position: absolute;
+    content:'';
+    width:90%;
+    height:90%;
+    border:3px solid #fb6017;
+    border-radius: 50%;
+    top:7px;
+    left:6px;
+}
+.media .title {
+    position: relative;
+    z-index: 4;
+    margin-top:30px;
+}
+.media .title h4{
+    text-align: center;
+    font-size:46px;
+    font-weight: bold;
+    color:#ffffff;
+    text-transform: capitalize;
+}
+.media .title .single-title{
+    text-align: center;
+    color:#ffffff;
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    padding-top: 10px;
+}
+.media .contacts-btn{
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media .contacts-btn .media-btn{
+    font-size: 16px;
+    color:#ff6116;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    width:155px;
+    height: 50px;
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 400ms ease-in;
+}
+.media .contacts-btn .media-btn:hover{
+    color:#ffffff;
+}
+.media .contacts-btn .media-btn::after{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color:black;
+    border-radius: 5px;
+    z-index: -1;
+    left:-160px;
+    transition: all 500ms ease-in;
+}
+.media .contacts-btn .media-btn:hover::after{
+    left:0px;
+    background-color:#353535;
+    
+}
+.media .contacts-btn .media-btn .arraw{
+    margin-left:5px;
+    margin-top:3px;
+    
+}
+/*media section End now*/
+
+/*choose us section start*/
+.choose-us{
+    width: 100%;
+    padding:100px 0px;
+    background-color:#ffffff;
+    position: relative;
+}
+.choose-us .title p{
+    color: #db5e22;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+.choose-us .title p::before {
+    position: absolute;
+    top: 30px;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #c6531c;
+    animation: animate 1.5s ease-in infinite;
+}
+.choose-us .title p::after{
+    position: absolute;
+    top: 30px;
+    left: 46px;
+    content: '';
+    width: 17px;
+    height: 1px;
+    background-color: #c6531c;
+    animation: animate 1.5s ease-in infinite;
+}
+.choose-us .sub-title h5{
+    margin-bottom: 10px;
+    font-size: 46px;
+    font-weight: bold;
+    width: 90%;
+    text-transform: capitalize;
+    color: #353535;
+}
+.choose-us .single-text{
+    font-size: 16px;
+    color:#616161;
+    font-family:"Roboto",sans-serif;
+    width:90%;
+    margin-top:10px;
+}
+/*choose us End*/
 
 
 
