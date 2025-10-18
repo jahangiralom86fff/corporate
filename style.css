@@ -354,10 +354,33 @@ a{
     position: absolute;
     top:30px;
     content: '';
-    width: 10px;
-    height: 1px;
+    width: 2px;
+    height: 2px;
     background-color: #c6531c;
-    animation: animate 1.5s ease-in infinite;
+    animation: animate 1.5s ease-in alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    from{
+        width:0px;
+        height:2px;
+    }
+    to{
+        width:40px;
+        height: 2px;
+        background-color: red;
+    } 
+}
+.about .title p::after{
+    position: absolute;
+    top:30px;
+    left:67px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: animate 1.5s ease-in alternate;
+    animation-iteration-count: infinite;
 }
 @keyframes animate{
     from{
@@ -366,27 +389,6 @@ a{
     }
     to{
         width:55px;
-        height: 2px;
-        background-color: red;
-    } 
-}
-.about .title p::after{
-    position: absolute;
-    top:30px;
-    left:50px;
-    content: '';
-    width: 10px;
-    height: 1px;
-    background-color: #c6531c;
-    animation: animate 1.5s ease-in infinite;
-}
-@keyframes animate{
-    from{
-        width:0px;
-        height:2px;
-    }
-    to{
-        width:60px;
         height: 2px;
         background-color: red;
     } 
@@ -669,27 +671,47 @@ a{
     font-weight: 500;
     text-transform: capitalize;
     position: relative;
-    transition: all 500ms ease-in-out;
-
 }
 .service .title p::after{
     position: absolute;
     top: 30px;
-    left: 42px;
+    left: 46px;
     content: '';
-    width: 10px;
-    height: 1px;
+    width: 2px;
+    height: 2px;
     background-color: #c6531c;
-    animation: animate 1.5s ease-in infinite;
+    animation: animate-right 1.5s ease-in alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animate-right {
+    0%{
+      width:2px;
+      height: 2px;
+    }
+    100%{
+        width:55px;
+        height: 2px;
+    } 
 }
 .service .title p::before{
     position: absolute;
     top: 30px;
     content: '';
-    width: 10px;
+    width: 2px;
     height: 1px;
     background-color: #c6531c;
-    animation: animate 1.5s ease-in infinite;
+    animation: animate-left 1.5s ease-in alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animate-left{
+    0%{
+        width:2px;
+        height: 2px;
+    }
+    100%{
+        width:40px;
+        height: 2px;
+    }
 }
 .service h3{
     text-align: center;
@@ -976,32 +998,79 @@ a{
     background-color:#ffffff;
     position: relative;
 }
+.choose-us .shape-left{
+    position: relative;
+}
+.choose-us .shape-left img{
+    position: absolute;
+    left:-120px;
+}
+.choose-us .shape-two{
+    position: relative;
+    z-index: 2;
+}
+.choose-us .shape-two img{
+    position: absolute;
+    top: -15px;
+    left:200px;
+}
+.choose-us .choose-shape-three{
+    position: relative;
+    z-index: 4;
+}
+.choose-us .choose-shape-three img{
+    position: absolute;
+    top: -19px;
+    left: 608px;
+}
+
 .choose-us .title p{
     color: #db5e22;
     font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
     position: relative;
-    transition: all 500ms ease-in-out;
 }
 .choose-us .title p::before {
     position: absolute;
     top: 30px;
+    left: 3px;
     content: '';
-    width: 10px;
-    height: 1px;
+    width: 0px;
+    height: 2px;
     background-color: #c6531c;
-    animation: animate 1.5s ease-in infinite;
+    animation: animates 1.5s ease-in alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animates{
+   0%{
+        width:1px;
+        height: 2px;
+    }
+    100%{
+        width: 40px;
+        height: 2px;
+    }
 }
 .choose-us .title p::after{
     position: absolute;
     top: 30px;
     left: 46px;
+    height: 2px;
     content: '';
-    width: 17px;
-    height: 1px;
     background-color: #c6531c;
-    animation: animate 1.5s ease-in infinite;
+    animation: animate 1.5s ease-in alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 2px;
+    }
+    100%{
+        width:60px;
+        height: 2px;
+    }
 }
 .choose-us .sub-title h5{
     margin-bottom: 10px;
@@ -1016,7 +1085,59 @@ a{
     color:#616161;
     font-family:"Roboto",sans-serif;
     width:90%;
-    margin-top:10px;
+    margin-top:16px;
+}
+.choose-us .choose-list ul{
+    margin-left:20px;
+    margin-top: 30px;
+}
+.choose-us .choose-list ul li{
+    list-style-type: none;
+    position: relative;
+}
+.choose-us .choose-list ul li a::after{
+    position: absolute;
+    content: url("assets/images/home-page/choose-sign.png");
+    top:-1px;
+    left:-52px;
+    width: 30px;
+    height: 30px;
+    padding-left:7px;
+    padding-top:2px;
+    background-color:#ff6116;
+    border-radius: 50%;
+    transition: all 300ms ease-in;
+    scale: 1;
+    
+}
+.choose-us .choose-list ul li:hover a::after{
+    background-color:#353535;
+    scale: 1.1;
+}
+.choose-us .choose-list ul li a{
+    color:#353535;
+    font-size: 18px;
+    font-weight: bold;
+}
+.choose-us .single-titles{
+    margin:25px 0px 0px 52px;
+}
+.choose-us .single-titles h6{
+    font-family:"Roboto",sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#818181;
+    width:70%;
+}
+.choose-us .img-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:8px;
+}
+.choose-us .img-box img{
+    z-index: 2;
 }
 /*choose us End*/
 
