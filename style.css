@@ -986,8 +986,17 @@ a{
 }
 .media .contacts-btn .media-btn .arraw{
     margin-left:5px;
-    margin-top:3px;
-    
+    margin-top:3px;   
+}
+.media .media-middle-shape{
+    position: relative;
+    z-index: 12;
+}
+.media .media-middle-shape img{
+    position: absolute;
+    top:10px;
+    left:20px;
+
 }
 /*media section End now*/
 
@@ -1137,9 +1146,256 @@ a{
     margin-top:8px;
 }
 .choose-us .img-box img{
+    position: relative;
     z-index: 2;
 }
+.choose-us .img-box .underlines{
+    width: 4px;
+    height: 150px;
+    background-color: #b74917;
+    position: absolute;
+    top: 55%;
+    left: 89px;
+    transition: all 500ms ease;
+    animation-direction: alternate;
+}
+.choose-us .img-box:hover .underlines{
+    height:210px;
+
+}
 /*choose us End*/
+
+/*fotter section start now*/
+.fotter{
+    padding:100px 0px;
+    background-color: #070707;
+    width:100%;
+}
+.fotter .side-bar {
+    width:100%;
+    height:100px;
+}
+.fotter .side-bar ul li{
+    list-style-type: none;
+    float: left;
+    margin: 0px 8px;
+}
+.fotter .side-bar ul li a{
+    text-decoration: none;
+}
+.fotter .side-bar ul li a img{
+    margin-left:-35px;
+}
+.fotter .side-bar ul li a .text{
+    font-size:30px;
+    color:#c8c8c8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.fotter .sub-text p{
+    font-family:"Roboto", sans-serif; 
+    color:#c8c8c8;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.fotter .icon-add ul{
+    padding-left:0px;
+    margin-left: -9px;
+}
+.fotter .icon-add ul li{
+    list-style-type: none;
+    float: left;
+    margin:20px 9px; 
+}
+.fotter .icon-add ul li a{
+    width:35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    align-items: center;
+    border-radius: 5px;
+    color:#ff6116;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    position: relative;    
+}
+.fotter .icon-add ul li a .brands-icon{
+   color: #ff6116;
+   z-index: 44;
+   transition: all 500ms ease-in-out;
+}
+.fotter .icon-add ul li a:hover .brands-icon{
+    color: #ffffff;
+}
+.fotter .icon-add ul li a::before{
+    content: '';
+    position: absolute;
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    transform: scale(0,0);
+    color:#ffffff;
+    transition: all 500ms ease-in-out;
+}
+.fotter .icon-add ul li a:hover::before{
+    background-color: #ff4934;
+    color:#ffffff;
+    transform: scale(1,1);
+}
+.fotter .text {
+    margin-top:30px;
+}
+.fotter .text h4{
+    font-size: 28px;
+    color:#ff6116;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fotter .company-title ul{
+    padding-left: 23px;
+    padding-top:20px;    
+}
+.fotter .company-title ul li{
+    list-style-type: none;
+    margin:16px 0px;
+}
+.fotter .company-title ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color:#c8c8c8;
+    text-transform: capitalize;
+    font-family:"Roboto", sans-serif; 
+    position: relative;
+    transition: all 200ms ease-in;
+}
+.fotter .company-title ul li a:hover{
+    color:#ff4934;
+}
+.fotter .company-title ul li a::after{
+    position: absolute;
+    content:"\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position:absolute;
+    top:-2px;
+    left:-25px;
+    transition: all 200ms ease-in;
+}
+.fotter .company-title ul li a:hover::after{
+    color:#ff4934;
+}
+.fotter .contacts-info ul{
+    width:70%;
+    padding-left: 30px;
+    margin-top:45px;
+}
+.fotter .contacts-info ul li{
+    list-style-type: none;
+    color:#c8c8c8;
+    margin:20px 0px;
+    position: relative;
+    font-family:"Roboto", sans-serif; 
+    font-size: 16px;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+.fotter .contacts-info ul li:hover{
+    color: #ff4934;
+}
+.fotter .contacts-info ul li .location-icon{
+    position: absolute;
+    font-size:25px;
+    color:#ff4934;
+    top:6px;
+    left:-32px;
+    transition: all 500ms ease-in-out;
+}
+.fotter .contacts-info ul li:hover .location-icon{
+    color: #ffffff;
+}
+.fotter .contacts-info ul li .email-icon{
+    position: absolute;
+    font-size:18px;
+    color:#ff4934;
+    top:1px;
+    left:-32px;
+    transition: all 500ms ease-in-out;
+}
+.fotter .contacts-info ul li:hover .email-icon{
+    color: #ffffff;
+}
+.fotter .contacts-info ul li .twitter{
+    position: absolute;
+    font-size:18px;
+    color:#ff4934;
+    top:1px;
+    left:-32px;
+    transition: all 500ms ease-in-out;
+}
+.fotter .contacts-info ul li:hover .twitter{
+    color: #ffffff;
+}
+/*fotter section End*/
+
+
+/*copy right logo*/
+.copy-right{
+    width: 100%;
+    padding:25px 0px;
+    background-color:#070707;
+    border-top: 1px solid #1c263a;
+}
+.copy-right .brands-text{
+    text-align: left;
+}
+.copy-right .brands-text a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+    color:#ffffff;
+    font-family: var(--Rajdhani);
+}
+.copy-right .brands-text .text{
+     text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+    color:#818592;
+}
+.copy-right .terms{
+    display:flex;
+    justify-content: right;
+    align-items: right;
+    margin-top:-28px;
+}
+.copy-right .terms .text{
+    text-align: right;
+    padding-top:-50px;
+    display:inline-block;
+    color:#ffffff;
+    font-family:"Roboto",sans-serif;
+}
+#scrollUp {
+    width:45px;
+    height: 45px;
+    text-align: center;
+    bottom: 40px;
+    cursor: pointer;
+    position:fixed;
+    font-size: 18px;
+    right: 20px;
+    top:90%;
+    background-color: red;
+    z-index: 999;
+    border-radius: 50px 50px 50px 50px;   
+    color:#ffffff;
+    padding-top: 10px;
+}
+.fotter .company-title ul li a::after
+/*home page css End*/
 
 
 
