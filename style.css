@@ -1330,7 +1330,130 @@ a{
     font-family:"Roboto",sans-serif;
     text-transform: capitalize;
 }
+.Work-Prosse .data-analysis .img-area{
+    position: relative; 
+}
+.Work-Prosse .data-analysis .img-area img{
+    position: absolute;
+    top: -81px;
+    left: -324px;
+}
 /*work procces End*/
+
+/*Our-experience section start*/
+.Our-experience{
+    width: 100%;
+    padding:140px 0px;
+    background-color:#ffffff;
+    overflow: hidden;
+    position: relative;
+}
+.Our-experience .title p{
+    color: #db5e22;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+}
+.Our-experience .title p::after{
+    position: absolute;
+    top: 30px;
+    left:7%;
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: animatesv 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Our-experience .title p::before{
+    position: absolute;
+    top: 30px;
+    left: 3px;
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: animates-exprence 1.5s ease-in alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animates-exprence{
+   0%{
+        width:1px;
+        height: 2px;
+    }
+    100%{
+        width: 40px;
+        height: 2px;
+    }
+}
+@keyframes animatesv{
+    0%{
+        width: 0px;
+        height: 2px;
+    }
+    100%{
+        width:60px;
+        height: 2px;
+    }
+}
+.Our-experience .single-title h3{
+   font-size: 46px;
+   color:#353535;
+   text-transform:capitalize;
+   font-weight: bold;
+   margin-top:26px;
+}
+.Our-experience .sub-title{
+    color:#616161;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family:"Roboto",sans-serif;
+    width: 84%;
+    margin:25px 0px;
+}
+.Our-experience .progress{
+    width: 100%;
+    height:5px;
+}
+.Our-experience .progress .progress-bar {
+  width: 100%;
+  background-color: #ff6116;
+  border-radius: 30px;
+  box-shadow: none;
+  position: relative;
+  animation: animate-positive 2s;
+}
+.Our-experience .progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--bs-progress-bar-color);
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--bs-progress-bar-bg);
+  transition: var(--bs-progress-bar-transition);
+}
+.Our-experience .progress-exprence .progress-item .progress-title{
+    position: relative;
+    font-size:18px;
+    color:red;
+}
+.Our-experience .progress-exprence .progress-title .single-count{
+    position: absolute;
+    color:#353535;
+    font-weight: bold;
+    right:352px;
+    top:396px;
+}
+.Our-experience .progress-exprence .progress-title .single-count::before{
+    content:"%";
+    position: absolute;
+    left:35px;
+}
+/*Our-experience End*/
 
 /*fotter section start now*/
 .fotter{
