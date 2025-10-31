@@ -973,7 +973,7 @@ a{
     position: absolute;
     width:100%;
     height: 100%;
-    background-color:black;
+    background-color:#353535;
     border-radius: 5px;
     z-index: -1;
     left:-160px;
@@ -1283,7 +1283,7 @@ a{
     font-weight: 1000;
     font-family: "Font Awesome 5 Free";
     top: 41px;
-    left: 50px;
+    left: 55px;
     font-size: 26px;
     color:#ff4934;
     transition: all 500ms ease;
@@ -1347,6 +1347,40 @@ a{
     background-color:#ffffff;
     overflow: hidden;
     position: relative;
+}
+.Our-experience .shape img{
+    position: absolute;
+    top: 15px;
+    left: 336px;
+}
+.Our-experience .shape-to img{
+    position: absolute;
+    top: 113px;
+    left: 78px;
+}
+.Our-experience .exprence-group .img-box img{
+    position: absolute;
+    z-index: 5;
+}
+.Our-experience .exprence-group{
+    position: relative;
+}
+.Our-experience .exprence-group .img-box .lines{
+    position: absolute;
+    width:4px;
+    height: 143px;
+    background-color:#ff4934;
+    top:307px;
+    left:-35px;
+    transition: all 500ms ease-in-out;
+}
+.Our-experience .exprence-group .img-box:hover .lines{
+    height: 200px;
+}
+.Our-experience .exprence-group .img-box .imgbox img{
+    position: absolute;
+    top: 255px;
+    left: 228px;
 }
 .Our-experience .title p{
     color: #db5e22;
@@ -1436,24 +1470,334 @@ a{
   background-color: var(--bs-progress-bar-bg);
   transition: var(--bs-progress-bar-transition);
 }
-.Our-experience .progress-exprence .progress-item .progress-title{
+.Our-experience .progress-exprence .progress-title{
     position: relative;
-    font-size:18px;
-    color:red;
+    color:#353535;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top:25px;
+    margin-bottom: 15px;
 }
 .Our-experience .progress-exprence .progress-title .single-count{
     position: absolute;
     color:#353535;
+    font-size: 18px;
     font-weight: bold;
-    right:352px;
-    top:396px;
+    text-transform: capitalize;
+    left:383px;
 }
-.Our-experience .progress-exprence .progress-title .single-count::before{
+.Our-experience .progress-exprence .progress-title .single-count::after{
     content:"%";
     position: absolute;
-    left:35px;
+    left:21px;
+}
+.Our-experience .progress-exprence .progress-title .count-two{
+    position: absolute;
+    color:#353535;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    left:244px;
+}
+.Our-experience .progress-exprence .progress-title .count-two::after{
+    content:"%";
+    position: absolute;
+    left:21px;
+}
+
+.Our-experience .progress-exprence .progress-title .single-counts{
+    position: absolute;
+    color:#353535;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    left:413px;
+}
+.Our-experience .progress-exprence .progress-title .single-counts::after{
+    content:"%";
+    position: absolute;
+    left:21px;
+}
+.Our-experience .contacts-us-btn{
+    margin-top:45px;
+    display: inline-block;
+    width:155px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color:#ff6116;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    position:relative;
+    transition: all 500ms ease-in;
+    overflow: hidden;
+    z-index: 1;
+}
+.Our-experience .contacts-us-btn::after{
+    position: absolute;
+    content:"";
+    width:100%;
+    height: 100%;
+    background-color:#353535;
+    left:-162px;
+    color:#ffffff;
+    border-radius:5px;
+    z-index:-1;
+    transition: all 500ms ease-in;
+}
+.Our-experience .contacts-us-btn:hover::after{
+    left:0px;
+}
+.Our-experience .contacts-us-btn .contacts-arraw{
+    margin-top:0px;
+    margin-left: 4px;
+    font-size: 16px;
 }
 /*Our-experience End*/
+
+/*counters start*/
+.counters{
+    width:100%;
+    padding:80px 0px;
+    background-color: #ff6116;
+    overflow: hidden;
+    position: relative;
+}
+.counters .shape-left img{
+    position:absolute;
+    top: -134px;
+    left: -28px;
+}
+.counters .shape-middle img{
+    position:absolute;
+    top: 168px;
+    left: 579px;
+}
+.counters .shape-right img{
+    position:absolute;
+    top: -106px;
+    right: 93px;
+    
+}
+.counters .counter-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counters .counter-flex .counter-box h2{
+    font-size: 45px;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.counters .counter-flex .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counters .text p{
+    font-size:16px;
+    color:#ffffff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.counters .text h3{
+    font-size: 22px;
+    color:#ffffff;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+}
+.counters .text h3::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 65px;
+    background-color: #ffffff;
+    top: -35px;
+    left:-31px;
+}
+.counters .shape{
+    position: relative;
+}
+.counters .shape img{
+    position: absolute;
+    top: -83px;
+    left: 9px;
+    animation: shape-animate 2s ease infinite;
+}
+@keyframes shape-animate{
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+/*counters End now*/
+
+/*Testimonials area start*/
+.Testimonials{
+    width: 100%;
+    padding:80px 0px;
+    background:url("assets/images/home-page/Testimonials.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Testimonials .title p{
+    color: #db5e22;
+    font-size: 18px;
+    font-weight:bold;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+}
+.Testimonials .title p::after{
+    position: absolute;
+    top: 30px;
+    left: 51.5%;
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: monials-onces 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite
+}
+@keyframes  monials-onces{
+    0%{
+        width:0px;
+    }
+    100%{
+        width:30px;
+    }
+    
+}
+@keyframes  animates-testimonilas{
+    0%{
+        width:0px;
+    }
+    100%{
+        width:60px;
+    }
+    
+}
+.Testimonials .title p::before{
+    position: absolute;
+    top: 30px;
+    left: 46.5%;
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: animates-testimonilas 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Testimonials h2{
+    text-align: center;
+    padding-top:15px;
+    font-weight: bold;
+    text-transform:capitalize;
+    font-size:46px;
+}
+.Testimonials .testimonials-content{
+    font-size: 20px;
+    color:red;
+    position: relative;
+    z-index: 5;
+}
+.Testimonials .testimonials-area .item{
+    padding-top: 60px;
+}
+.Testimonials .testimonials-area .testimonials-content{
+    width:95%;
+    height: 250px;
+    padding: 32px 35px 0px 40px;
+    background-color:#ffffff;
+    border-radius: 5px;
+}
+.Testimonials .testimonials-area .testimonials-content .imgbox{
+    position: relative;
+    z-index: 2;
+}
+.Testimonials .testimonials-area .testimonials-content .imgbox img{
+    position: absolute;
+    top:-62px;
+    left:0px;
+    border-radius:50%;
+    width:85px;
+    height:85px;
+    border:4px solid #ffc7ac;
+}
+.Testimonials .testimonials-area .testimonials-content .testimonials-list ul{
+    float: right;
+}
+.Testimonials .testimonials-area .testimonials-content .testimonials-list ul li{
+    list-style-type: none;
+    float: left;
+    margin:0px 3px;
+}
+.Testimonials .testimonials-area .testimonials-content .testimonials-list ul li a{
+    color:#ff4934;
+    font-size: 14px;
+}
+.Testimonials .testimonials-area .testimonials-content .single-text{
+    padding-top:47px;
+}
+.Testimonials .testimonials-area .testimonials-content .single-text a{
+    color:#616161;
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+}
+.Testimonials .testimonials-area .testimonials-content .quote{
+    float: right;
+    margin-top:18px;
+}
+.Testimonials .testimonials-area .testimonials-content .quote .quote-item{
+    font-size:18px;
+    color:#ffe9de;
+}
+.Testimonials .testimonials-area .testimonials-content .single-list ul{
+    margin-left:-46px;
+}
+.Testimonials .testimonials-area .testimonials-content .single-list ul li{
+    float: left;
+    list-style-type: none;
+    margin-left:15px;
+}
+.Testimonials .testimonials-area .testimonials-content .single-list ul li{
+    font-size:14px;
+    color:#616161;
+    text-transform: capitalize;
+    position:relative;
+}
+.Testimonials .testimonials-area .testimonials-content .single-list ul li .mansment{
+    position: absolute;
+    top:5px;
+    left:20px;
+}
+.Testimonials .testimonials-area .testimonials-content .single-list ul li .creator{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#353535;
+}
+/*Testimonials End*/
+
+/*Our-blog start*/
+.Our-blog{
+    padding:100px 0px;
+    width:100%;
+    background-color:#ffffff;
+}
+/*Our-blog End*/
 
 /*fotter section start now*/
 .fotter{
