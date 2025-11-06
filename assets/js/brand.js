@@ -24,3 +24,14 @@ $('.brand-carousel').owlCarousel({
             }
         }
 })
+
+document.querySelectorAll('.Our-blog .single-bolg').forEach(function(card) {
+    card.addEventListener('mouseover', function() {
+        card.style.transform = 'translateY(-15px)';
+        card.style.transition = 'all 0.4s ease';
+    });
+
+    card.addEventListener('mouseout', function() {
+        card.style.transform = 'translateY(0)';
+    });
+});
