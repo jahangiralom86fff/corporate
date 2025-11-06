@@ -2007,7 +2007,39 @@ a{
     }
     100%{
         width:85px;
-    }
+    } 
+}
+.contacts .sub-contacts .call-us{
+    position:relative;
+}
+.contacts .sub-contacts .call-us .call-btn{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    background-color:#ffffff;
+    right:0px;
+    top:-83px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts .sub-contacts .call-us .call-btn::after{
+    position: absolute;
+    content: '';
+    width:80%;
+    height: 80%;
+    background-color:#ff6116;
+    border-radius: 50%;
+    top:10px;
+    left:9px;
+}
+.contacts .sub-contacts .call-us .call-btn::before{
+    position: absolute;
+    content:url("assets/images/home-page/contacts-btn.png");
+    top:36px;
+    left:33px;
+    z-index: 5;
     
 }
 /*contacts section End*/
