@@ -1789,10 +1789,54 @@ a{
     text-transform: capitalize;
     color:#353535;
 }
-.owl-carousel .owl-dots{
+.Testimonials .owl-carousel .owl-dots{
     display: block !important;
     z-index: 5;
     position: relative;
+}
+.Testimonials .owl-carousel .owl-nav.disabled{
+    display: block;
+    color:transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 343px;
+    left: 48%;
+}
+.Testimonials .owl-carousel .owl-nav.disabled .owl-prev{
+    position: absolute;
+    top:0px;
+    margin-left:10px;
+    width:24px;
+    height: 6px;
+    border-radius: 5px;
+    background-color:#ff6116;
+    top:20px;
+    left:10px;
+}
+.Testimonials .owl-carousel .owl-nav.disabled .owl-next{
+    position: absolute;
+    top:0px;
+    margin-left:20px;
+    width:15px;
+    height: 6px;
+    border-radius: 5px;
+    background-color:#ff6116;
+    top:20px;
+    left:30px;
+    transition: all 500ms ease;
+}
+.Testimonials .owl-carousel .owl-nav.disabled .owl-next:hover{
+    background-color: #c1a89d;
+}
+.Testimonials .owl-carousel .owl-nav.disabled .owl-next::after{
+    position: absolute;
+    content:'';
+    width:15px;
+    height: 6px;
+    border-radius: 5px;
+    background-color:#ff6116;
+    top:0px;
+    left:20px;
 }
 /*Testimonials End*/
 
