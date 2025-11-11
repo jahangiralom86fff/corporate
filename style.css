@@ -2263,6 +2263,342 @@ a{
 }
 /*fotter section End*/
 
+/*about page start*/
+.About-Us{
+    width: 100%;
+    padding:0px;
+    padding-top:250px;
+    padding-bottom: 155px;
+    background-color:#353535;
+    background:url("assets/images/About/About.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    overflow: hidden;
+}
+.About-Us::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:1px;
+    background-color:rgba(37, 32, 32, 0.7);
+}
+.About-Us .about-shape{
+    position:relative;
+    z-index: 2;
+}
+.About-Us .about-shape img{
+    position: absolute;
+    top: -320px;
+    left: -58px;
+    transform: rotate(-14deg);
+}
+.About-Us .shape-ts{
+    position: relative;
+    z-index: 1;
+}
+.About-Us .shape-ts img{
+    position:absolute;
+    top: -287px;
+    left: -64px;
+    transform: rotate(-14deg);
+}
+.About-Us .shape-bottom{
+    position: relative;
+    z-index: 2;
+}
+.About-Us .shape-bottom img{
+    position: absolute;
+    top: 62px;
+    right: -422px;
+}
+.About-Us .shape-right{
+    position: relative;
+    z-index: 1;
+}
+.About-Us .shape-right img{
+    position: absolute;
+    top: 75px;
+    right: -110px;
+}
+.About-Us .title p{
+    text-align: center;
+    font-size: 46px;
+    color:#ffffff;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+.About-Us .sub-title{
+    position:relative;
+    text-align: center;
+    z-index: 1;
+}
+.About-Us .sub-title p{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+.About-Us .sub-title p::after{
+    content:"\f101";
+    position:absolute;
+    top:2px;
+    left:49.4%;
+    font-size: 16px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    
+}
+.About-Us .sub-title p .text{
+    text-transform: capitalize;
+    margin-left:30px;
+    color:#ff6116;
+}
+/*about page End*/
+
+/*Our-Team start*/
+.Our-Team{
+    padding:112px 0px;
+    background-color:#ffffff;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.Our-Team h1{
+    text-align: center;
+    font-weight: bold;
+    color:#353535;
+    text-transform: capitalize;
+    font-size: 46px;
+    padding-top:8px;
+}
+.Our-Team .title-text p{
+  color: #db5e22;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+  text-align: center;
+  transition: all 500ms ease-in-out;
+}
+.Our-Team .title-text p::before{
+    position: absolute;
+    top: 30px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation:our-teams 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+@keyframes our-teams{
+    0%{
+        width:2px;
+        height:2px;
+    }
+    100%{
+        width:35px;
+        height:2px;
+    }
+}
+@keyframes our-teamt {
+    0%{
+        width:2px;
+        height:2px;
+    }
+    100%{
+        width:36px;
+        height:2px;
+    }
+}
+.Our-Team .title-text p::after{
+    position: absolute;
+    top: 30px;
+    left:50.2%;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: our-teamt 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Our-Team .single-team .img-box img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+}
+.Our-Team .single-team{
+    margin-top:80px;
+    box-shadow: 0px 0px 15px rgba(15, 13, 13, 0.08);
+    transition: all 500ms ease;
+}
+.Our-Team .single-team:hover{
+    box-shadow: 0px 0px 25px rgba(15, 13, 13, 0.15);
+}
+.Our-Team .single-team .content{
+    width:94%;
+    background-color: #ffff;
+    padding:30px 0px;
+    padding-bottom:20px;
+}
+.Our-Team .single-team .content .contacts{
+    position: relative;
+}
+.Our-Team .single-team .content .contacts .sub-teams{
+    width:90%;
+    height: 50px;
+    background-color:#ffffff;
+    position: absolute;
+    top:-80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:30px;
+
+}
+.Our-Team .single-team:hover .content .contacts .sub-teams ul{
+    top:-55px;
+    visibility: visible;
+}
+.Our-Team .single-team .content .contacts .sub-teams ul{
+    position: absolute;
+    visibility:hidden;
+    top:0px;
+    transition: all 300ms ease;
+}
+.Our-Team .single-team .content .contacts .sub-teams ul li{
+    float: left;
+    overflow: hidden;
+    margin:6px 4px;
+    list-style-type: none;
+}
+.Our-Team .single-team .content .contacts .sub-teams ul li a{
+    width: 35px;
+    height: 35px;
+    background-color:#ff4934;
+    display: inline-block;
+    font-size: 16px;
+    color:#ffffff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease;
+}
+.Our-Team .single-team .content .contacts .sub-teams ul li a:hover{
+    background-color:#ffffff;
+    color:#ff6116;
+}
+.Our-Team .single-team .content .title-text{
+    margin-top:-30px;
+    text-align: center;
+}
+.Our-Team .single-team .content .title-text a{
+    color:#353535;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+}
+.Our-Team .single-team .content .teams-design{
+    margin-top:5px;
+    text-align: center;
+}
+.Our-Team .single-team .content .teams-design a{
+    font-size: 16px;
+    color:#ff0057;
+    font-family:"Roboto",sans-serif;
+    text-transform: capitalize;
+}
+.Our-Team .single-team .content .signle-contacts ul{
+    padding-left: 0px;
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Our-Team .single-team .content .signle-contacts ul li{
+    list-style-type: none;
+    float: left;
+    margin:5px 10px;
+}
+.Our-Team .single-team .content .signle-contacts ul li a{
+    padding:10px 12px;
+    background-color: #f5f5f6;
+    border-radius:3px;
+    color:#9797a1;
+    transition: all 400ms ease;
+    font-family: "Roboto",sans-serif;
+    text-transform: capitalize;
+}
+.Our-Team .single-team .content .signle-contacts ul li a:hover{
+    background-color:#ff6116;
+    color:#ffffff;
+}
+.Our-Team .single-team .content .signle-contacts ul li a .email-icon{
+    margin-right:8px;
+}
+/*Our-Team End*/
+
+/*subscribe section Start*/
+.subscribes-us{
+    position: relative;
+}
+.subscribes-us .subscribe{
+    position: absolute;
+    top:-32px;
+    width: 100%;
+    padding:40px 60px;
+    background-color: #ff6116;
+    border-radius: 7px;
+}
+.subscribes-us .subscribe .title a{
+    font-size: 45px;
+    color:#ffffff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.subscribes-us .subscribe p{
+    font-size: 16px;
+    color:#ffffff;
+    font-family:"Roboto",sans-serif;
+}
+.subscribes-us .subscribe .subscribe-btn{
+    position: relative;
+}
+.subscribes-us .subscribe .subscribe-btn form input{
+    width:60%;
+    height: 60px;
+    font-size: 16px;
+    color:#353535;
+    font-weight: 600;
+    border:none;
+    outline: none;
+    border-radius: 7px 0px 0px 7px;
+    padding-left: 20px;
+}
+.subscribes-us .subscribe .subscribe-btn{
+    padding-top:23px;
+}
+.subscribes-us .subscribe .subscribe-btn form button{
+    width:30%;
+    height: 60px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right:59px;
+    background-color:#353535;
+    color:#ffffff;
+    border-radius: 0px 6px 6px 0px;
+    font-size: 18px;
+    font-weight:600;
+    text-transform: uppercase;   
+}
+/*subscribe End*/
 
 /*copy right logo*/
 .copy-right{
@@ -2320,6 +2656,7 @@ a{
 }
 .fotter .company-title ul li a::after
 /*home page css End*/
+
 
 
 
