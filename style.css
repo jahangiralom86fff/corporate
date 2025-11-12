@@ -337,10 +337,22 @@ a{
     position: relative;
     overflow: hidden;
 }
+.about .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#fff9f6;
+    top:0px;
+}
 .about .shape img{
     position: absolute;
     top:-375px;
     left:-71px;
+}
+.about .shape-ts{
+    position: absolute;
+    top:72px;
+    left:78px;
 }
 .about .title p{
     color:#db5e22;
@@ -399,6 +411,8 @@ a{
     font-weight: bold;
     text-transform: capitalize;
     margin-top:27px;
+    position: relative;
+    z-index: 1;
 }
 .about .desc{
     margin-top:17px;
@@ -408,6 +422,8 @@ a{
     font-family:"Roboto",sans-serif;
     text-transform: capitalize;
     color:#6f6f6f;
+    z-index: 1;
+    position: relative;
 }
 .about .desc .single-text{
     font-size: 16px;
