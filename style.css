@@ -3262,6 +3262,353 @@ a{
 }
 /*blog details Page End*/
 
+/*career page start Now*/
+.join-team{
+    padding:100px 0px;
+    background-color:#ffffff;
+    position: relative;
+    overflow: hidden;
+}
+.join-team .join-title p{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position:relative;
+    color: #ff6116;
+}
+.join-team .join-title p::before{
+    position: absolute;
+    top: 30px;
+    left: 4px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: join 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.join-team .join-title p::after{
+    position: absolute;
+    top: 30px;
+    left: 45px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: join-animate 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+@keyframes join-animate {
+    0%{
+        width:2px;
+        height: 2px;
+    }
+    100%{
+        width:50px;
+        height: 2px;
+    }
+}
+@keyframes join {
+    0%{
+        width:2px;
+        height: 2px;
+    }
+    100%{
+        width:35px;
+        height: 2px;
+    }
+}
+.join-team h2{
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#353535;
+    margin-top:20px;
+    margin-bottom:35px;
+}
+.join-team .join-single-title{
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    color:#616161;
+}
+.join-team .join-btn{
+    padding:15px 40px;
+    background-color: #ff6116;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color:#ffffff;
+    position: relative;
+    overflow: hidden;
+}
+.join-team .join-btn::before{
+    position: absolute;
+    content: "\f101";
+    font-weight: 900;
+    font-size: 16px;
+    font-family: "Font Awesome 5 Free";
+    top:16px;
+    left:114px;
+}
+.join-team .join-btn::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255,255,255,0.30);
+    top:0px;
+    left:-160px;
+    border-radius: 5px;
+    transition: all 500ms ease-in;
+}
+.join-team .join-btn:hover::after{
+    left: 0px;
+}
+.join-team .join-social{
+    position: relative;
+    margin-bottom: 45px;
+}
+.join-team .join-social .sub-social{
+    padding:30px 70px;
+    background:#ffffff;
+    box-shadow:0px 0px 10px rgba(50, 47, 47, 0.1);
+    border-radius:6px;
+    transition: all 500ms ease-in;
+}
+.join-team .join-social:hover .sub-social{
+    background: #ff6116;
+    transform: translateY(15px);
+    box-shadow:0px 0px 15px rgba(50, 47, 47, 0.1);
+}
+.join-team .join-social .sub-social .iconbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f6f7f8;
+    margin:0 auto;
+    transition: all 500ms ease-in;
+}
+.join-team .join-social:hover .sub-social .iconbox{
+    box-shadow: 0px 0px 5px rgb(198, 195, 195);
+    background-color: #f6f7f8;
+}
+.join-team .join-social .sub-social .single-txt{
+    font-weight: 600;
+    font-size: 20px;
+    color:#353535;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 500 ease-in;
+}
+.join-team .join-social:hover .sub-social .single-txt{
+    color:#ffffff;
+}
+/*job-vacancy aerea*/
+.job-area{
+    padding:100px 0px;
+    background-color:#f6f7f8;
+}
+.job-area p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position:relative;
+    color: #ff6116;
+}
+.job-area p::after{
+    position: absolute;
+    top: 30px;
+    left: 47%;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: join-animate 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.job-area p::before{
+    position: absolute;
+    top: 30px;
+    left:51%;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: join 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.job-area h2{
+    text-align: center;
+    font-size: 46px;
+    color:#353535;
+    font-weight: bold;
+    margin-top:35px;
+    margin-bottom: 30px;
+}
+.job-area .job-apply{
+    margin:25px 0px;
+    border-radius: 4px;
+    width: 100%;
+    padding:20px 30px;
+    background-color:#ffffff;
+    transition: all 500ms ease-in;
+}
+.job-area .job-apply:hover{
+    background:#ff6116;
+}
+.job-area .job-apply .job-btn{
+    float: right;
+}
+.job-area .job-apply .job-btn a{
+    width:175px;
+    height: 55px;
+    display: inline-block;
+    border: 1px solid #ff6116;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color:#353535;
+    margin-top:17px;
+    font-weight: 600;
+    transition: all 500ms ease-in;
+}
+.job-area .job-apply:hover .job-btn a{
+    background-color:#ffffff;
+    border-radius: 5px;
+    border:none;
+}
+.job-area .job-apply .img-box{
+    width:15%; 
+    float: left; 
+}
+.job-area .job-apply .single-text{
+    width: 85%;
+    float: left;
+}
+.job-area .job-apply .single-text h4{
+    font-size: 26px;
+    font-weight: 600;
+    color:#353535;
+    text-transform: capitalize;
+    margin-top:12px;
+    transition: all 500ms ease-in;
+}
+.job-area .job-apply .single-text h5{
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    color:#616161;
+    transition: all 500ms ease-in;
+}
+.job-area .job-apply:hover .single-text h5{
+    color:#ffffff; 
+}
+.job-area .job-apply:hover .single-text h4{
+    color:#ffffff;
+}
+.job-area .job-apply .img-box .single-img{
+    width:90px;
+    height: 90px;
+    background-color:#f6f7f8;
+    display: inline-block;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 6px;
+    border:2px solid #ff6116;
+}
+/*career page End now*/
+
+/*drop-contact area start*/
+.drop-contact{
+    width:100%;
+    padding:90px 0px;
+    background-color:#ffffff;
+}
+.drop-contact .drop-title p{
+    color: #db5e22;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+.drop-contact h2{
+    font-size: 46px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top:30px;
+}
+.drop-contact .drop-title p::after{
+    position: absolute;
+    top: 30px;
+    left: 41px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: contact-a 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.drop-contact .drop-title p::before{
+    position: absolute;
+    top: 30px;
+    left: 1px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: contacts 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+@keyframes contact-a{
+    0%{
+       width: 0px;
+    }
+    100%{
+       width: 35px;
+    }
+}
+@keyframes contacts{
+    0%{
+       width: 0px;
+    }
+    100%{
+       width: 32px;
+    }
+}
+.drop-contact .drop-content{
+    padding:40px 40px;
+    background-color: #f6f7f8;
+    width: 98%;
+    margin-top:25px;
+}
+.drop-contact .drop-content .titles{
+    font-size: 19px;
+    font-weight: 600;
+    color:#353535;
+    margin-bottom:30px;
+}
+/*drop-contact area End*/
+
 /*subscribe section Start*/
 .subscribes-us{
     position: relative;
