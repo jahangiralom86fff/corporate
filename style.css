@@ -746,6 +746,7 @@ a{
     box-shadow: 0px 0px 10px rgba(17, 15, 15, 0.09);
     border-radius:7px 0px 7px 7px;
     transition: all 500ms ease-out;
+    margin-bottom: 50px;
 }
 .service .card-box .imgbox{
     margin-bottom: 0px;
@@ -820,9 +821,8 @@ a{
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    top:43%;
-    left:10%;
     transition: all 500ms ease;
+    top:197px;
 }
 .service .card-box:hover .content .logo-img{
     transform: rotateY(360deg);  
@@ -3765,6 +3765,474 @@ a{
     left:0px;
 }
 /*error page End*/
+
+/*our-pricing start*/
+.our-pricing{
+    padding: 100px 0px;
+    width: 100%;
+    background:#ffffff;
+}
+.our-pricing p{
+    color: #db5e22;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+}
+.our-pricing h2{
+    text-align: center;
+    font-size: 46px;
+    color:#353535;
+    font-weight: bold;
+    padding-top:10px;
+}
+.our-pricing p::after{
+    position: absolute;
+    top: 30px;
+    left: 47%;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation:pricing-a 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.our-pricing p::before{
+    position: absolute;
+    top: 30px;
+    left: 51%;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation:pricing 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+@keyframes pricing-a{
+    0%{
+        width:2px;
+        height:2px;
+    }
+    100%{
+        width:40px;
+        height: 2px;
+    }
+}
+@keyframes pricing{
+    0%{
+        width:2px;
+        height:2px;
+    }
+    100%{
+        width:30px;
+        height: 2px;
+    }
+}
+.our-pricing .single-pricing{
+    height: 600px;
+    width: 100%;
+    border-radius:8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px rgb(164, 161, 161);
+    border-radius: 9px;
+    padding-top:50px;
+    margin-top:60px;
+    overflow: hidden;
+    position: relative;
+    transition: all 500ms ease-in;
+}
+.our-pricing .single-pricing::after{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 280px;
+    background-color:#fbeee8;
+    top:0px;
+    left: 0px;
+    transition: all 500ms ease-in-out;
+}
+.our-pricing .single-pricing:hover::after{
+    background-color: rgba(255, 97, 22, .2);
+}
+.our-pricing .single-pricing::before{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 350px;
+    background-color:#ffffff;
+    top:100px;
+    left: 0px;
+    z-index: 1;
+    border-radius: 260px 260px 0px 0px;
+}
+.our-pricing .single-pricing .pricing-sign{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+    background-color:#d8591b;
+    border-radius: 50%;
+    margin: 0 auto;
+
+}
+.our-pricing .single-pricing .pricing-sign .euro{
+    color:#ffffff;
+    width: 40px;
+    height: 40px;
+    border:2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 400ms ease-in;
+}
+.our-pricing .single-pricing .pricing-sign:hover .euro{
+    border:none;
+    font-size:28px;
+}
+.our-pricing .single-pricing .popular-text{
+    position: relative;
+    z-index: 2;
+}
+.our-pricing .single-pricing .popular-text h6{
+    position: absolute;
+    color:#d8591b;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    top:-92px;
+    left:70%;
+}
+.our-pricing .single-pricing h5{
+    font-size: 22px;
+    font-weight: 600;
+    color:#353535;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top:40px;
+}
+.our-pricing .single-pricing .text{
+    position: relative;
+    z-index: 2;
+}
+.our-pricing .single-pricing .text h2{
+    font-size: 65px;
+    color:#d8591b;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:-17px;
+}
+.our-pricing .single-pricing .text .dollars{
+    font-size: 32px;
+    color:#353535;
+    position: absolute;
+    font-weight: bold;
+    top:19px;
+    left: 115px;
+}
+.our-pricing .single-pricing .text .month{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: absolute;
+    top:51px;
+}
+.our-pricing .single-pricing .pricing-item{
+    position: relative;
+    z-index: 2;
+}
+.our-pricing .single-pricing .pricing-item ul{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 36px;
+}
+.our-pricing .single-pricing .pricing-item ul li{
+    list-style-type: none;
+    margin-bottom:20px;
+    font-family:"Roboto",sans-serif;
+    font-size: 16px;
+    color:#616161;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+}
+.our-pricing .single-pricing .pricing-item ul li .check-icon{
+    position: absolute;
+    font-size: 12px;
+    color:#da6329;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    left:97px;
+    top:3px;
+    width:20px;
+    height: 20px;
+    border:1px solid #da6329;
+    border-radius: 50%;
+
+}
+.our-pricing .single-pricing .pricing-item ul li .checks{
+    position: absolute;
+    font-size: 12px;
+    color:#da6329;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    left:78px;
+    top:3px;
+    width:20px;
+    height: 20px;
+    border:1px solid #da6329;
+    border-radius: 50%;
+}
+.our-pricing .single-pricing .pricing-btn{
+    margin:0 auto;
+    text-align: center;
+    display: inline-block;
+    width: 180px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8591b;
+    border-radius: 6px;
+    font-size: 18px;
+    color:#ffffff;
+    font-weight:500;
+    overflow: hidden;
+    position: relative;
+}
+.our-pricing .single-pricing .pricing-btn::after{
+    position:absolute;
+    content:'';
+    width:100%;
+    height: 100%;
+    background-color:rgba(255,255,255,0.30);
+    left:-181px;
+    top:0px;
+    transition: all 500ms ease-in;
+}
+.our-pricing .single-pricing .pricing-btn:hover::after{
+    left:0px;
+}
+/*our-pricing End*/
+
+/*Faq area start Now*/
+.Faq{
+    padding:90px 0px;
+    background-color:#ffffff;
+    width: 100%;
+}
+.Faq .faq-title p{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    color:#ff6116;
+}
+.Faq .faq-title p::after{
+    position: absolute;
+    top: 30px;
+    left: 45px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: catagoris-animate 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Faq .faq-title p::before{
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: catagoris 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Faq h4{
+    font-size: 46px;
+    color:#353535;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top:25px;
+    padding-bottom: 16px;
+    width: 57%;
+}
+.Faq p{
+    font-family:"Roboto",sans-serif;
+    font-size: 16px;
+    color:#353535;
+    width:83%;
+}
+.Faq .btn{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color:#353535;
+    transition: all 500ms ease;
+    position: relative;
+}
+.Faq .btn:hover{
+    color:#ff6116;
+}
+.Faq .btn::after{
+    content:"\f107";
+    position:absolute;
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    font-weight: bold;
+    top:6px;
+    left:606px;
+    transition: all 400ms ease;
+}
+.Faq .btn:hover::after{
+    transform: rotate(260deg);
+}
+.Faq .btn:focus{
+    border: none;
+}
+.Faq .card{
+    border:none;
+    background-color:#f7f7f7;
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    color:#616161;
+    margin-left:15px;
+    padding:30px 30px;
+}
+.Faq #text{
+    margin-top: 40px;
+}
+/*Faq End*/
+
+/*Our-project area start*/
+.Our-project{
+    padding:100px 0px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.Our-project .project-title p{
+    color: #db5e22;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+}
+.Our-project .project-title p::after{
+    position: absolute;
+    top: 30px;
+    left: 47%;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: pricing-a 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Our-project .project-title p::before{
+    position: absolute;
+    top: 30px;
+    left: 51%;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: pricing 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Our-project h2{
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#353535;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+/***** isotope-filter start *****/
+.isotope{
+    padding: 20px 0px;
+}
+.isotope .filter-menu{
+    list-style-type: none;
+    text-align: center;
+}
+.isotope .filter-menu li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    margin: 0px 7px;
+    padding: 5px 12px;
+    cursor: pointer;
+    position: relative;
+}
+.isotope .filter-menu li::before{
+    content:'';
+    position: absolute;
+    width:0px;
+    height: 2px;
+    background-color:#ff6116;
+    top:32px;
+    left:12px;
+    transition: all 500ms ease-in-out;
+}
+.isotope .filter-menu li:hover::before{
+    width:50px; 
+}
+.isotope .filter-menu li.active{
+    color: #ff6161;
+    border-color: #ff6116;
+}
+.isotope .filter-layout{
+    margin-top: 30px;
+    padding: 0px !important;
+}
+.isotope .filter-layout .single-item{
+    margin: 15px;
+    position:relative;
+}
+.isotope .filter-layout .single-item img{
+    width: 100%;
+    height: 323px;
+    object-fit: cover;
+}
+.isotope .filter-layout .single-item .content{
+    position: absolute;
+    width:70%;
+    height: 80px;
+    background-color:#353535;
+    z-index: 2;
+    top:208px;
+    left:70px;
+    border-radius: 8px;
+}
+.isotope .filter-layout .single-item .content p{
+    color:red;
+}
+/***** isotope-filter end *****/
+
+/*Our-project area End*/
 
 /*subscribe section Start*/
 .subscribes-us{
