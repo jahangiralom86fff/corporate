@@ -22,7 +22,7 @@ a{
     position: absolute;
     content: '';
     width: 33%;
-    height: 100%;
+    height:100%;
     background-color:#d8591b;                 
     left:0px;
     top:0px;
@@ -30,38 +30,38 @@ a{
 }
 .topbar::before{
     position: absolute;
-    content: '';
+    content:'';
     width: 108px;
-    height: 100%;
+    height:100%;
     background-color:#d8591b;                 
     left:30%;
     top:0px;
-    z-index: 1;
-    transform: rotate(-49deg);
+    z-index:1;
+    transform:rotate(-49deg);
 }
 .topbar p{
     position: relative;
-    z-index: 4;
+    z-index:4;
     color:#ffffff;
     display: flex;
     padding-left:21%;
-    padding-top: 12px;
-    font-size: 15px;
-    font-family: "Roboto",sans-serif;    
+    padding-top:12px;
+    font-size:15px;
+    font-family:"Roboto",sans-serif;    
 }
 .topbar .support-tobbar ul {
-    padding-left: 26%;
+    padding-left:26%;
 }
 .topbar .support-tobbar ul li{
-    float: left;
-    list-style-type: none;
+    float:left;
+    list-style-type:none;
     margin:0px 2px;
 }
 .topbar .support-tobbar ul li a{
     color:#939393;
     font-size: 15px;
     font-family:"Roboto",sans-serif;
-    text-transform: capitalize;
+    text-transform:capitalize;
 }
 .topbar .icon-tobar ul{
     padding-left:60%;
@@ -73,64 +73,61 @@ a{
 }
 .topbar .icon-tobar ul li a{
     color:#ffffff;
-    font-size: 14px;
-    text-transform: capitalize;
-
+    font-size:14px;
+    text-transform:capitalize;
 }
-
-
 /*banner section start now*/
 .banner{
     width:100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
+    height:auto;
+    overflow:hidden;
+    position:relative;
 }
 .banner .shape img{
-    position: absolute;
-    top: -128px;
+    position:absolute;
+    top:-128px;
     transform: rotate(-6deg);
-    left: -41px;
-    z-index: 5;
+    left:-41px;
+    z-index:5;
 }
 .banner .shape .slider-shape{
-    position: absolute;
-    top: 157px;
-    left: 985px;
-    transform: rotate(4deg);
+    position:absolute;
+    top:157px;
+    left:985px;
+    transform:rotate(4deg);
 }
 .banner .carousel-item{
-    position: relative;
+    position:relative;
 }
 .banner .carousel-item::before{
     content: '';
     left:0;
     top:0;
-    position: absolute;
-    background: linear-gradient(90deg,rgba(53, 53, 53, 0.6) 50%, rgba(117, 116, 116, .1) 100%);
+    position:absolute;
+    background:linear-gradient(90deg,rgba(53, 53, 53, 0.6) 50%, rgba(117, 116, 116, .1) 100%);
     width:100%;
-    height: 100%;
+    height:100%;
 }
 .carousel-control-prev{
-    z-index: 5;
-    position: absolute;
+    z-index:5;
+    position:absolute;
     left:1182px;
     top:357px;
     width:50px;
-    height: 50px;
+    height:50px;
     background-color: #b06948;
-    border-radius: 50%;
+    border-radius:50%;
     font-size:12px!important;
 }
 .carousel-control-next{
-    z-index: 5;
+    z-index:5;
     position: absolute;
     right:306px;
     top:297px;
     width:50px;
     height: 50px;
     background-color: #b06948;
-    border-radius: 50%;
+    border-radius:50%;
     font-size:12px!important;
 }
 .banner .carousel-inner .carousel-item .slider{
@@ -140,7 +137,6 @@ a{
     position: absolute;
     top:-457px;
     left:58px;
-
 }
 .banner .slider-content .title p{
     font-size: 20px;
@@ -846,7 +842,7 @@ a{
     animation: aniimg 2s linear infinite;
 }
 @keyframes  aniimg  {
-    form{
+    from{
         transform: rotateY(0deg);
     }
     to{
@@ -864,7 +860,7 @@ a{
     animation: brand-right-shape 2000ms linear infinite;
 }
 @keyframes brand-right-shape {
-    form{
+    from{
         transform: rotateY(0deg);
     }
     to{
@@ -2908,7 +2904,6 @@ a{
     width:10px;
     height: 10px;
     background-color:#ff6116;
-    border:1px solid red transparent;
     border-radius: 50%;
     left:-18px;
     top:6px;
@@ -3031,7 +3026,7 @@ a{
     color:#353535;
     border-radius: 2px;
     position: relative;
-    transition: all 500 ease-in;
+    transition: all 500ms ease-in;
 }
 .blog-items .tags .tags-items:hover{
     color:#ffffff;
@@ -3408,7 +3403,7 @@ a{
     display: inline-block;
     text-align: center;
     margin-top: 20px;
-    transition: all 500 ease-in;
+    transition: all 500ms ease-in;
 }
 .join-team .join-social:hover .sub-social .single-txt{
     color:#ffffff;
@@ -4545,7 +4540,7 @@ a{
 }
 .Services-details .Categories{
     padding-top:40px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
     background-color: #f6f6f6;
@@ -4618,7 +4613,6 @@ a{
     width:10px;
     height: 10px;
     background-color:#ff6116;
-    border:1px solid red transparent;
     border-radius: 50%;
     left:-18px;
     top:6px;
@@ -4760,7 +4754,235 @@ a{
     font-size: 16px;
     border-radius:0px 4px 4px 0px;
 }
+.Services-details .tags{
+    padding:41px 25px;
+    background-color:#f6f6f6;
+    float:left;
+    border-radius: 5px;
+}
+.Services-details .tags .sub-tag ul{
+    padding-left:0px
+}
+.Services-details .tags .sub-tag ul li{
+    list-style-type: none;
+    float: left;
+    margin:20px 8px;
+}
+.Services-details .tags .tags-items{
+    padding: 12px 18px;
+    background-color:#ffffff;
+    box-shadow: 0px 0px 8px rgba(28, 25, 25, 0.09);
+    font-size: 16px;
+    font-weight: 500;
+    color:#353535;
+    border-radius: 2px;
+    position: relative;
+    transition: all 500ms ease-in;
+}
+.Services-details .tags .tags-items:hover{
+    color:#ffffff;
+    z-index: 1;
+}
+.Services-details .tags .tags-items::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff6116;
+    top:0px;
+    left:0px;
+    border-radius: 2px;
+    transform: scale(0,1);
+    transition: all 400ms ease-in;
+    z-index: 1;
+}
+.Services-details .tags .tags-items:hover::after{
+    transform: scale(1,1);
+    z-index:-1;
+}
+.Services-details .tags-title{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color:#4a4a4a;
+    padding-left:7px;
+    margin-bottom: 35px;
+    position: relative;
+}
+.Services-details .tags-title::after{
+    position: absolute;
+    top: 30px;
+    left: 45px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: tags 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Services-details .tags-title::before{
+    position: absolute;
+    top: 30px;
+    left:10px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: popular-tags 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+@keyframes tags{
+    0%{
+        width:2px;
+    }
+    100%{
+        width:50px;
+    }
+}
+@keyframes popular-tags{
+    0%{
+        width:2px;
+    }
+    100%{
+        width:30px;
+    }
+}
 /*Services-details End*/
+
+/*project details*/
+.Portfolio{
+    padding: 100px 0px;
+    padding-bottom: 60px;
+    background-color:#ffffff;
+    width:100%;
+}
+.Portfolio p{
+    color: #ff4934;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+.Portfolio p::before{
+    position: absolute;
+    top: 30px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: search-animate 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Portfolio p::after{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: search-ts 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Portfolio h3{
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#353535;
+    margin-top:27px;
+    margin-bottom:27px;
+}
+.Portfolio img{
+    margin-bottom: 70px;
+    width:98%;
+    height: auto;
+}
+.Portfolio .item a img{
+    width:98%;
+    height: auto;
+    object-fit: cover;
+}
+.Portfolio .details-btn{
+    width:160px;
+    height: 50px;
+    background-color:#ff6116;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight:600;
+    color:#ffffff;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+}
+.Portfolio .details-btn::after{
+    position:absolute;
+    content:'';
+    width:100%;
+    height: 100%;
+    background-color:rgba(255,255,255,0.30);
+    top:0px;
+    left:-170px;
+    transition: all 500ms ease-in-out;
+}
+.Portfolio .details-btn:hover::after{
+    left:0px;
+}
+.Portfolio .single-details{
+    padding:41px 40px 178px;
+    background-color:#f6f6f6;
+    width: 100%;
+    border-radius: 6px;
+}
+.Portfolio .single-details h4{
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#353535;
+    margin-top:26px;
+    margin-bottom:32px;
+}
+.Portfolio .single-details .side-subtitle .side-text{
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    font-weight: 500;
+    color:#6e6e6e;
+}
+.Portfolio .single-details .list-item ul{
+    margin-top:50px;
+    padding-left:18px;
+}
+.Portfolio .single-details .list-item ul li{
+    list-style-type: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#353535;
+    position: relative;
+}
+.Portfolio .single-details .list-item ul li::before{
+    content:'';
+    width:10px;
+    height: 10px;
+    position: absolute;
+    background-color:#ff6116;
+    border-radius: 50%;
+    top:6px;
+    left:-18px;
+}
+.Portfolio .single-details .list-item ul li .Strategy{
+    font-size: 16px;
+    font-weight: 500;
+    color:#6e6e6e;
+    text-transform: capitalize;
+    padding-left:6px;
+}
+/*project details End*?
 
 /*subscribe section Start*/
 .subscribes-us{
@@ -4846,7 +5068,6 @@ a{
 .copy-right .terms{
     display:flex;
     justify-content: right;
-    align-items: right;
     margin-top:-28px;
 }
 .copy-right .terms .text{
@@ -4872,7 +5093,7 @@ a{
     color:#ffffff;
     padding-top: 10px;
 }
-.fotter .company-title ul li a::after
+
 /*home page css End*/
 
 
