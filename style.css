@@ -4212,6 +4212,20 @@ a{
     margin: 15px;
     position:relative;
 }
+.isotope .filter-layout .single-item::after{
+    content:'';
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 100%;
+    background-color:rgba(255, 176, 138, 0.55);
+    transform: scale(0);
+    transition: all 450ms ease-in-out;
+}
+.isotope .filter-layout .single-item:hover::after{
+    transform: scale(1);
+}
 .isotope .filter-layout .single-item img{
     width: 100%;
     height: 323px;
@@ -4220,19 +4234,533 @@ a{
 .isotope .filter-layout .single-item .content{
     position: absolute;
     width:70%;
-    height: 80px;
+    padding-top:20px;
+    padding-left:25px;
+    padding-bottom: 15px;
     background-color:#353535;
     z-index: 2;
-    top:208px;
-    left:70px;
-    border-radius: 8px;
+    top:210px;
+    left:67px;
+    border-radius: 6px;
+    transition: all 500ms ease-in-out;
+    visibility: hidden;
+}
+.isotope .filter-layout .single-item:hover .content{
+    top:191px;
+    visibility: visible;
 }
 .isotope .filter-layout .single-item .content p{
-    color:red;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.isotope .filter-layout .single-item .content h5{
+    font-size: 16px;
+    color:#aeaeae;
+    font-weight: 500;
+    font-style: normal;
+    margin-top:-15px;
+    position: relative;
+}
+.isotope .filter-layout .single-item .content h5::after{
+    content:"\f105";
+    position: absolute;
+    top:-20px;
+    left:220px;
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    color:#ffffff;
+    font-size: 18px;
 }
 /***** isotope-filter end *****/
-
+.Our-project .project-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height:52px;
+    background-color:#ff6116;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-top:30px;
+    position: relative;
+}
+.Our-project .project-btn::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:-170px;
+    background:rgba(255,255,255,0.30);
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+}
+.Our-project .project-btn:hover::after{
+    left:0px;
+}
 /*Our-project area End*/
+
+/*Services-details start*/
+.Services-details{
+    padding:100px 0px;
+    background-color:#ffffff;
+    width: 100%;
+}
+.Services-details .imgbox img{
+    width: 98%;
+}
+.Services-details h2{
+    font-weight: bold;
+    font-size: 46px;
+    color:#353535;
+    text-transform: uppercase;
+    margin:25px 0px;
+}
+.Services-details p{
+    color:#616161;
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    width:90%;
+    margin-bottom: 30px;
+}
+.Services-details .details-contact{
+    width: 100%;
+    height: 160px;
+    padding-left:30px;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color:#f3f7fa;
+    border-radius: 6px;
+    margin-top:15px;
+    margin-bottom:60px;
+    transition: all 400ms ease-in-out;
+}
+.Services-details .details-contact:hover{
+    transform: translateY(-15px);
+}
+.Services-details .details-contact .imgbox{
+    width:20%;
+    float: left;
+}
+.Services-details .details-contact .imgbox img{
+    width:48px;
+    height: 60px;
+}
+.Services-details .details-contact .single-text{
+    width:80%;
+    float: left;
+}
+.Services-details .details-contact .single-text h2{
+    font-size: 24px;
+    margin-top:-4px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.Services-details .details-contact .single-text .sub-text{
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    color:#616161;
+    width:80%;
+    margin-top:-16px;
+}
+.Services-details .card-box{
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 7;
+    box-shadow: 0px 0px 10px rgba(17, 15, 15, 0.09);
+    border-radius: 7px 0px 7px 7px;
+    transition: all 500ms ease-out;
+}
+.Services-details .card-box:hover{
+    transform: translateY(-15px);
+}
+.Services-details .card-box .imgbox {
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+.Services-details .card-box .imgbox a img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.8s ease;
+  transform: scale(1);
+}
+.Services-details .card-box:hover .imgbox a img {
+  border-radius: 4px 4px 0 0;
+  transform: scale(1.1);
+}
+.Services-details .card-box .content {
+  width: 89%;
+  height: auto;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+.Services-details .card-box .content .title-text{
+    color:#353535;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all 500ms ease;
+}
+.Services-details .card-box .content .title-text:hover{
+    color:#ff6116;
+}
+.Services-details .card-box .content .single-title h5{
+    font-size: 16px;
+    color:#616161;
+    padding-top:8px;
+    font-family:"Roboto",sans-serif;
+}
+.Services-details .card-box .content .read-more-btn{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#353535;
+    padding-top:15px;
+    display: inline-block;
+    position: relative;
+    transition: all 400ms ease-in;
+}
+.Services-details .card-box .content .read-more-btn:hover{
+    color:#ff6116;
+    transform: translateX(14px);
+}
+.Services-details .card-box .content .read-more-btn .angels-btn{
+    position: absolute;
+    top:20px;
+    left:72px;
+    transition: all 500ms ease-in;
+}
+.Services-details .card-box .content .read-more-btn:hover .angels-btn{
+    color:#ff6116;
+}
+.Services-details .card-box .content .logo-img{
+    position: absolute;
+    background-color:#ff6116;
+    width:50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 500ms ease;
+    top:197px;
+}
+.Services-details .card-box:hover .content .logo-img{
+    transform: rotateY(360deg);  
+}
+
+.Services-details .search-area{
+    padding:40px 26px;
+    background:#f6f6f6;;
+    width: 100%;
+    border-radius: 4px;
+}
+.Services-details .search-area .search{
+    position: relative;
+    margin-bottom:25px;
+}
+.Services-details .search-area .search p{
+    color:#353535;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+.Services-details .search p::before{
+    position: absolute;
+    top: 30px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: search-animate 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Services-details .search p::after{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: search-ts 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+@keyframes  search-animate{
+    0%{
+        width:2px;
+    }
+    100%{
+        width:25px;
+    }
+    
+}
+@keyframes  search-ts{
+    0%{
+        width:2px;
+    }
+    100%{
+        width:30px;
+    }  
+}
+.Services-details .search-btn{
+    position: relative;
+    margin-top: 40px;
+}
+.Services-details .search-btn input{
+    width: 85%;
+    background-color:#ffffff;
+    color:#dddddd;
+    border: none;
+    outline: none;
+    padding:20px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+}
+.Services-details .search-btn button{
+    width:15%;
+    height: 64px;
+    border: none;
+    outline: none;
+    margin-left: -2px;
+    border-radius: 0px 5px 5px 0px;
+    float: right;
+    background-color:#ffffff;
+}
+.Services-details .search-btn .search-icon{
+    margin-right:9px;
+    color:#b7b7b7;
+    font-weight: 900;
+}
+.Services-details .Categories{
+    padding-top:40px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f6f6f6;
+    margin-top:40px;
+    border-radius: 5px;
+}
+.Services-details .Categories .title {
+    position: relative;
+    margin-bottom: 60px;
+}
+.Services-details .Categories .title p{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position:absolute;
+    color:#4a4a4a;
+}
+.Services-details .Categories .title p::after{
+    position: absolute;
+    top: 30px;
+    left: 45px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: catagoris-animate 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+.Services-details .Categories .title p::before{
+    position: absolute;
+    top: 30px;
+    left:2px;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c6531c;
+    animation: catagoris 1.5s ease-in alternate;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+}
+@keyframes catagoris{
+    0%{
+        width:2px;
+    }
+    100%{
+        width:40px;
+    }
+}
+@keyframes catagoris-animate{
+    0%{
+        width:2px;
+    }
+    100%{
+        width:25px;
+    }
+}
+.Services-details .Categories .catagoris-item ul{
+    padding-left: 20px;
+}
+.Services-details .Categories .catagoris-item ul li{
+    margin:18px 0px;
+    list-style-type: none;
+    position: relative;
+}
+.Services-details .Categories .catagoris-item ul li::after{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    background-color:#ff6116;
+    border:1px solid red transparent;
+    border-radius: 50%;
+    left:-18px;
+    top:6px;
+    transition: all 500ms ease-in-out;
+}
+.Services-details .Categories .catagoris-item ul li:hover::after{
+    border:1px solid red;
+    background-color: transparent;
+}
+.Services-details .Categories .catagoris-item ul li a{
+    color:#353535;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.Services-details .Categories .catagoris-item ul li::before{
+    content:'';
+    position:absolute;
+    width:0px;
+    height: 1px;
+    background-color: red;
+    top: 28px;
+    float: left;
+    transition: all 1s ease;
+    left:1px;
+}
+.Services-details .Categories .catagoris-item ul li:hover::before{
+    width:100px;
+}
+.Services-details .contacts{
+    width:100%;
+    padding:130px 73px;
+    background-color:#ffffff;
+    margin:50px 0px;
+    border-radius:6px;
+    background-image:url("assets/images/service-details/Service-Details-rghts.png");
+    background-repeat:repeat-x;
+    background-position:center;
+    overflow: hidden;
+    position: relative;
+}
+.Services-details .contacts img{
+    position: absolute;
+    top:0px;
+    z-index: 2;
+    top: -29px;
+    left: -80px;
+}
+.Services-details .contacts::after{
+    content:'';
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color:rgba(26, 27, 30, 0.60);
+    border-radius: 6px;
+}
+.Services-details .contacts .title p{
+    font-size: 16px;
+    font-family:"Roboto",sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    color:#ff6116;
+    position: relative;
+    z-index: 1;
+}
+.Services-details .contacts .sub-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    color:#ffffff;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 1; 
+    text-align: center;
+    margin-top:-16px;
+    letter-spacing: 2px;
+}
+.Services-details .contacts .sub-title h2::after{
+    content: '';
+    width: 258px;
+    height: 1px;
+    background-color: #ff6116;
+    position: absolute;
+    top: 47px;
+    left: 1px;
+}
+.Services-details .contacts h2{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+    color:#ffffff;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.Services-details .contacts h6{
+    font-size: 18px;
+    color:#ffffff;
+    text-align: center;
+    margin-top:-16px;
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize;
+}
+.Services-details .contacts .contacts-btn{
+    margin-top:40px;
+}
+.Services-details .contacts input{
+    width:165px;
+    height: 52px;
+    background-color:#ffffff;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px 0px 0px 4px;
+    font-size: 16px;
+    color:#353535;
+    font-weight: 600;
+    margin-left: 15px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+.Services-details .contacts .contacts-btn button{
+    z-index: 1;
+    width:60px;
+    height: 52px;
+    outline: none;
+    border:none;
+    background-color:#ff6116;
+    float: right;
+    position: absolute;
+    right:103px;
+    top:350px;
+    color:#ffffff;
+    font-size: 16px;
+    border-radius:0px 4px 4px 0px;
+}
+/*Services-details End*/
 
 /*subscribe section Start*/
 .subscribes-us{
