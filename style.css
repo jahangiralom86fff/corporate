@@ -21,12 +21,12 @@ a{
 .topbar::after{
     position: absolute;
     content: '';
-    width: 33%;
+    width:33%;
     height:100%;
     background-color:#d8591b;                 
     left:0px;
     top:0px;
-    z-index: 1;
+    z-index:1;
 }
 .topbar::before{
     position: absolute;
@@ -43,7 +43,7 @@ a{
     position: relative;
     z-index:4;
     color:#ffffff;
-    display: flex;
+    display:flex;
     padding-left:21%;
     padding-top:12px;
     font-size:15px;
@@ -59,7 +59,7 @@ a{
 }
 .topbar .support-tobbar ul li a{
     color:#939393;
-    font-size: 15px;
+    font-size:15px;
     font-family:"Roboto",sans-serif;
     text-transform:capitalize;
 }
@@ -67,8 +67,8 @@ a{
     padding-left:60%;
 }
 .topbar .icon-tobar ul li{
-    list-style: none;
-    float: left;
+    list-style:none;
+    float:left;
     margin:0px 5px;
 }
 .topbar .icon-tobar ul li a{
@@ -115,7 +115,7 @@ a{
     top:357px;
     width:50px;
     height:50px;
-    background-color: #b06948;
+    background-color:#b06948;
     border-radius:50%;
     font-size:12px!important;
 }
@@ -125,13 +125,13 @@ a{
     right:306px;
     top:297px;
     width:50px;
-    height: 50px;
+    height:50px;
     background-color: #b06948;
     border-radius:50%;
     font-size:12px!important;
 }
 .banner .carousel-inner .carousel-item .slider{
-    position: relative;
+    position:relative;
 }
 .banner .carousel-inner .carousel-item .slider .slider-content{
     position: absolute;
@@ -548,7 +548,7 @@ a{
     height: 50px;
     width:50px;
     top:103px;
-    z-index: 45;
+    z-index: 4;
     left:108px;
     display: flex;
     justify-content: center;
@@ -558,7 +558,33 @@ a{
     font-size: 16px;
     color:#ffffff;
     text-transform: capitalize;
+    box-shadow: 0 0 12px rgba(17, 15, 15, 0.09);
     border: 2px solid rgba(252, 252, 252, 0.7);
+}
+.about .about-play .img-box:hover .play-btn::before{
+    content:'';
+    position: absolute;
+    left: 0px;
+    top:2px;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    animation: pulse-border 3s ease-out infinite;
+}
+@keyframes  pulse-border{
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255,255,255,255,0.20);
+    }
+    70%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 25px rbga(255,255,255,0.20);
+    }
+    100%{
+        transform: scale(1);
+    } 
 }
 /*about progress bar*/
 .about .about-progress{
@@ -847,8 +873,7 @@ a{
     }
     to{
         transform: rotateY(360deg);
-    }
-    
+    } 
 }
 .brand .right-shape{
     position: relative;
@@ -865,8 +890,7 @@ a{
     }
     to{
         transform: rotateY(360deg);
-    }
-    
+    }   
 }
 .brand .item .img-box img{
     width:160px;
@@ -883,6 +907,11 @@ a{
     background-position: center;
     background-repeat:no-repeat;
     overflow: hidden;
+}
+.media .shape-img img{
+    position: absolute;
+    top: -537px;
+    left: -208px;
 }
 .media .overlay{
     width:100%;
@@ -903,30 +932,38 @@ a{
     width:130px;
     height: 130px;
     background-color:rgba(63, 62, 63, 0.70);
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0 0 0 0px rgba(255, 60, 60, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     position: relative;
-    animation: plays-btn 2s ease infinite;
+    z-index: 2;
 }
-@keyframes  plays-btn{
+.media .video-btn .plays-btn::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    animation: pulse-border 3s ease infinite;
+}
+@keyframes pulse-border{
     0%{
-        border: 0px solid red;
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.20);
     }
-    50%{
-        background: radial-gradient(circle at 30% 30%, #ff0057, #2a2a72);
-        border:6px solid rgba(247, 243, 245, 0.1);
-        box-shadow:0px 0px 15px rgba(17, 15, 15, 0.09);
+    70%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0 25px rgba(255,255,255,0.20);
     }
     100%{
-        border:8px solid rgba(250, 250, 250, 0.2);
-        box-shadow:0px 0px 15px rgba(250, 250, 250, 0.09);
+        transform: scale(1);
     }
 }
 .media .video-btn .plays-btn::after{
-    position: absolute;
+    position:absolute;
     content:'';
     width:90%;
     height:90%;
@@ -943,14 +980,14 @@ a{
 .media .title h4{
     text-align: center;
     font-size:46px;
-    font-weight: bold;
+    font-weight:bold;
     color:#ffffff;
-    text-transform: capitalize;
+    text-transform:capitalize;
 }
 .media .title .single-title{
-    text-align: center;
+    text-align:center;
     color:#ffffff;
-    font-size: 16px;
+    font-size:16px;
     font-family:"Roboto",sans-serif;
     padding-top: 10px;
 }
@@ -963,94 +1000,91 @@ a{
 .media .contacts-btn .media-btn{
     font-size: 16px;
     color:#ff6116;
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
+    font-weight:bold;
+    position:relative;
+    z-index:1;
     width:155px;
-    height: 50px;
+    height:50px;
     background-color:#ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-    transition: all 400ms ease-in;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+    position:relative;
+    overflow:hidden;
+    transition:all 400ms ease-in;
 }
 .media .contacts-btn .media-btn:hover{
     color:#ffffff;
 }
 .media .contacts-btn .media-btn::after{
     content: '';
-    position: absolute;
+    position:absolute;
     width:100%;
-    height: 100%;
+    height:100%;
     background-color:#353535;
-    border-radius: 5px;
-    z-index: -1;
+    border-radius:5px;
+    z-index:-1;
     left:-160px;
-    transition: all 500ms ease-in;
+    transition:all 500ms ease-in;
 }
 .media .contacts-btn .media-btn:hover::after{
     left:0px;
-    background-color:#353535;
-    
+    background-color:#353535; 
 }
 .media .contacts-btn .media-btn .arraw{
     margin-left:5px;
     margin-top:3px;   
 }
 .media .media-middle-shape{
-    position: relative;
-    z-index: 12;
+    position:relative;
+    z-index:12;
 }
 .media .media-middle-shape img{
-    position: absolute;
+    position:absolute;
     top:10px;
     left:20px;
-
 }
 /*media section End now*/
 
 /*choose us section start*/
 .choose-us{
-    width: 100%;
+    width:100%;
     padding:100px 0px;
     background-color:#ffffff;
-    position: relative;
+    position:relative;
 }
 .choose-us .shape-left{
-    position: relative;
+    position:relative;
 }
 .choose-us .shape-left img{
-    position: absolute;
+    position:absolute;
     left:-120px;
 }
 .choose-us .shape-two{
-    position: relative;
+    position:relative;
     z-index: 2;
 }
 .choose-us .shape-two img{
-    position: absolute;
-    top: -15px;
+    position:absolute;
+    top:-15px;
     left:200px;
 }
 .choose-us .choose-shape-three{
-    position: relative;
-    z-index: 4;
+    position:relative;
+    z-index:4;
 }
 .choose-us .choose-shape-three img{
-    position: absolute;
+    position:absolute;
     top: -19px;
     left: 608px;
 }
-
 .choose-us .title p{
-    color: #db5e22;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: capitalize;
-    position: relative;
+    color:#db5e22;
+    font-size:18px;
+    font-weight:500;
+    text-transform:capitalize;
+    position:relative;
 }
 .choose-us .title p::before {
     position: absolute;
@@ -1128,8 +1162,7 @@ a{
     background-color:#ff6116;
     border-radius: 50%;
     transition: all 300ms ease-in;
-    scale: 1;
-    
+    scale: 1;  
 }
 .choose-us .choose-list ul li:hover a::after{
     background-color:#353535;
@@ -1172,8 +1205,7 @@ a{
     animation-direction: alternate;
 }
 .choose-us .img-box:hover .underlines{
-    height:210px;
-
+    height: 250px;
 }
 .choose-us .img-box .side-left-title{
     position: relative;
@@ -1197,15 +1229,12 @@ a{
 .choose-us .img-box .side-left-title .sub-bussniess::before{
     content: '';
     position: absolute;
-    width: 120px;
-    height: 60px;
-    border-right: 2px solid red;
-    border-bottom: 2px solid red;
-    top:111px;
-    left:18px;
-}
-.choose-us .img-box:hover .side-left-title .sub-bussniess::before{
-    height:90px;
+    width: 90px;
+    height: 54px;
+    border-right: 3px solid #353535;
+    border-bottom: 3px solid #353535;
+    top: 115px;
+    left: 54px;
 }
 /*choose us End*/
 
@@ -1274,7 +1303,6 @@ a{
     position:absolute;
     top:-5px;
     transition: all 400ms ease;
-
 }
 .Work-Prosse .data-analysis:hover::after{
     background-color:#ff6116;
@@ -1529,7 +1557,6 @@ a{
     position: absolute;
     left:21px;
 }
-
 .Our-experience .progress-exprence .progress-title .single-counts{
     position: absolute;
     color:#353535;
@@ -1925,7 +1952,7 @@ a{
     font-size: 46px; 
 }
 .Our-blog .single-bolg{
-    box-shadow: 0px 0px 10px rgb(141, 134, 134);
+    box-shadow: 0px 0px 8px rgb(141, 134, 134);
     width: 95%;
     border-radius:5px 5px 5px 5px;
     transition: all 500ms ease;
@@ -2107,8 +2134,7 @@ a{
     content:url("assets/images/home-page/contacts-btn.png");
     top:36px;
     left:33px;
-    z-index: 5;
-    
+    z-index: 5;  
 }
 /*contacts section End*/
 
@@ -2523,6 +2549,7 @@ a{
     z-index: 2;
     position: relative;
     font-size: 16px;
+    line-height: 1;
 }
 .Our-Team .single-team .content .team-social ul li a:hover .teams-icon{
     color:#ff6116;
@@ -2678,7 +2705,7 @@ a{
     position: absolute;
 }
 .blog-items .single-bolg:hover .img-box::after{
-    background-color: rgba(90, 84, 84, 0.5);
+    background-color: rgba(90, 84, 84, 0.7);
 }
 .blog-items .single-bolg .content{
     border: 2px solid #f9e4da;
@@ -2788,8 +2815,7 @@ a{
     }
     100%{
         width:25px;
-    }
-    
+    }   
 }
 @keyframes  search-ts{
     0%{
@@ -3118,7 +3144,6 @@ a{
     top:-28px;
     left:158px;
 }
-
 .blog-items .main-admin .admin-title ul{
     padding-left: 0px;
 }
@@ -3137,7 +3162,6 @@ a{
     background-color: #ffffff;
     width:10px;
     height: 10px;
-
 }
 .blog-items .main-admin .admin-title ul li a{
     font-size: 16px;
@@ -4965,6 +4989,9 @@ a{
     color:#353535;
     position: relative;
 }
+.Portfolio .single-details .list-item ul li a{
+    color:#353535;
+}
 .Portfolio .single-details .list-item ul li::before{
     content:'';
     width:10px;
@@ -5093,7 +5120,6 @@ a{
     color:#ffffff;
     padding-top: 10px;
 }
-
 /*home page css End*/
 
 
